@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import {
   Header,
   Footer,
+  BrandsSection,
   CompaniesSection,
 } from './'
 
@@ -13,6 +14,7 @@ export const HomePage = () => {
     <HomePageStyles>
       <Header />
       <CompaniesSection />
+      <BrandsSection />
       <Footer />
     </HomePageStyles>
   )

@@ -13,19 +13,19 @@ export const BrandsSection = () => {
           <p>Friends who make INT2 possible:</p>
           <a
             className='brands__logo brands__logo--us-embassy'
-            href={EXTERNAL_LINKS.KORINVER}
+            href={EXTERNAL_LINKS.US_EMBASSY}
             target='_blank'
             rel='noopener noreferrer'
           ></a>
           <a
             className='brands__logo brands__logo--ed-usa'
-            href={EXTERNAL_LINKS.GEN_UI}
+            href={EXTERNAL_LINKS.ED_USA}
             target='_blank'
             rel='noopener noreferrer'
           />
           <a
             className='brands__logo brands__logo--probesa'
-            href={EXTERNAL_LINKS.IBES}
+            href={EXTERNAL_LINKS.ED_USA}
             target='_blank'
             rel='noopener noreferrer'
           />

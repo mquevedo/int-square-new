@@ -37,6 +37,7 @@ export const CompaniesSection = () => {
 const CompaniesSectionStyles = styled.div`
   .companies {
     &__outer {
+      font-family: ${({ theme }) => theme.secondaryFont};
     }
 
     &__inner {
@@ -60,18 +61,18 @@ const CompaniesSectionStyles = styled.div`
       }
 
       &--korinver {
-        background-image: url(/images/logo--korinver.png);
+        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-korinver.png);
       }
 
       &--gen-ui {
-        background-image: url(/images/logo--gen-ui.png);
+        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-genui.png);
         @media(min-width: ${({theme}) => theme.medium.start}) {
           background-position: right;
         }
       }
 
       &--ibes {
-        background-image: url(/images/logo--ibes.png);
+        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-ibes.png);
         background-position: center;
         margin: auto;
         @media(min-width: ${({theme}) => theme.medium.start}) {

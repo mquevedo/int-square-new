@@ -1,3 +1,2 @@
-import React from 'react'
-
-export const Brands = () => <div>Brands</div>
+export * from './CompaniesSection'
+export * from './BrandsSection'

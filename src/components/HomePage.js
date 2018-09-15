@@ -4,6 +4,14 @@ import styled from 'styled-components'
 
 import {
   Header,
+  Timeline,
+  Alumni,
+  Current,
+  Life,
+  Partners,
+  ComingBack,
+  ApplyNow,
+  Brands,
   Footer,
   BrandsSection,
   CompaniesSection,
@@ -13,6 +21,13 @@ export const HomePage = () => {
   return (
     <HomePageStyles>
       <Header />
+      <Timeline/>
+      <Alumni/>  
+      <Current/>
+      <Life/>
+      <Partners/>
+      <ComingBack/>
+      <ApplyNow/>
       <CompaniesSection />
       <BrandsSection />
       <Footer />

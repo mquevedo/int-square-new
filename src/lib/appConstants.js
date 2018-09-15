@@ -11,4 +11,7 @@ export const EXTERNAL_LINKS = {
   GEN_UI: 'https://genui.co/',
   IBES: 'https://www.ibes.ag/nc/en.html',
   KORINVER: 'http://www.korinver.com',
+  US_EMBASSY: 'https://sv.usembassy.gov/es/',
+  ED_USA: 'https://educationusa.state.gov/',
+  
 }

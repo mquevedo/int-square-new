@@ -117,6 +117,7 @@ const FooterStyles = styled.div`
       }
 
       &__options {
+        font-family: ${({ theme }) => theme.secondaryFont};
         width: 100%;
         height: 300px;
         display: flex;

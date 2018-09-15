@@ -4,15 +4,29 @@ import styled from 'styled-components'
 
 import {
   Header,
+  Timeline,
+  Alumni,
+  Current,
+  Life,
+  Partners,
+  ComingBack,
+  ApplyNow,
+  Brands,
   Footer,
-  CompaniesSection,
 } from './'
 
 export const HomePage = () => {
   return (
     <HomePageStyles>
       <Header />
-      <CompaniesSection />
+      <Timeline/>
+      <Alumni/>  
+      <Current/>
+      <Life/>
+      <Partners/>
+      <ComingBack/>
+      <ApplyNow/>
+      <Brands />
       <Footer />
     </HomePageStyles>
   )

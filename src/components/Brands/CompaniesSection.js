@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import StyledSlatOuter from './StyledSlatOuter'
-import StyledSlatInner from './StyledSlatInner'
-import { EXTERNAL_LINKS } from '../lib/appConstants'
+import StyledSlatOuter from '../StyledSlatOuter'
+import StyledSlatInner from '../StyledSlatInner'
+import { EXTERNAL_LINKS } from '../../lib/appConstants'
 
 export const CompaniesSection = () => {
   return (

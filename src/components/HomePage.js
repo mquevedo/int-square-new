@@ -11,7 +11,6 @@ import {
   Partners,
   ComingBack,
   ApplyNow,
-  Brands,
   Footer,
   BrandsSection,
   CompaniesSection,

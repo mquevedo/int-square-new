@@ -12,8 +12,7 @@ import {
   ComingBack,
   ApplyNow,
   Footer,
-  BrandsSection,
-  CompaniesSection,
+  Brands,
 } from './'
 
 export const HomePage = () => {
@@ -27,8 +26,7 @@ export const HomePage = () => {
       <Partners/>
       <ComingBack/>
       <ApplyNow/>
-      <CompaniesSection />
-      <BrandsSection />
+      <Brands />
       <Footer />
     </HomePageStyles>
   )

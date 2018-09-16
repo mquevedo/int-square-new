@@ -1,3 +1,4 @@
+
 export * from './HomePage'
 export * from './Header'
 export * from './Timeline'
@@ -7,5 +8,6 @@ export * from './Life'
 export * from './Partners'
 export * from './ComingBack'
 export * from './ApplyNow'
-export * from './Brands'
+export * from './BrandsSection'
+export * from './CompaniesSection'
 export * from './Footer'

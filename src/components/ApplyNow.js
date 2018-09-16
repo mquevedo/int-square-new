@@ -96,7 +96,7 @@ const ReqsSectionsStyles = styled.div`
         font-size: 18px;
         color: ${({theme}) => theme.white};
         font-weight: bold;
-        font-family:  ${({theme}) => theme.montserratNormal};
+        font-family:  ${({theme}) => theme.baseFont};
         margin-top: 6%;
         width: 95vw;
         p {
@@ -116,7 +116,7 @@ const ReqsSectionsStyles = styled.div`
         }
 
         &__sub {
-          font-family:  ${({theme}) => theme.montserratFont};
+          font-family:  ${({theme}) => theme.secondaryFont};
           margin-left: -61% !important;
           @media (min-width: ${({ theme }) => theme.large.start}) {
               margin: 0 !important;
@@ -140,7 +140,7 @@ const ReqsSectionsStyles = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: ${({theme}) => theme.montserratRegular};
+        font-family: ${({theme}) => theme.baseFont};
         font-size: 18px;
 
          color: ${({theme}) => theme.white};
@@ -280,7 +280,7 @@ const ReqsSectionsStyles = styled.div`
      }
 
      &__button {
-        font-family: ${({theme}) => theme.montserratNormal};
+        font-family: ${({theme}) => theme.baseFont};
         font-weight: bold;
         font-size: 20px !important;
         margin-bottom: 20% !important;

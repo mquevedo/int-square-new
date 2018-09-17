@@ -166,7 +166,6 @@ const ReqsSectionsStyles = styled.div`
               margin: 0;
               margin-left: -42%;
               margin-top: 6%;
-              font-weight: bold;
           }
 
           &__junior {
@@ -174,14 +173,12 @@ const ReqsSectionsStyles = styled.div`
           }
 
           &--junior-title {
-              font-weight: bold;
               margin: 0;
               margin-left: -55%;
               margin-top: 6%;
           }
 
           &--skills-title {
-              font-weight: bold;
               margin: 0;
               margin-left: -65%;
               margin-top: 6%;
@@ -268,7 +265,6 @@ const ReqsSectionsStyles = styled.div`
 
         &__dev {
           flex: 3;
-          font-weight: bold;
           font-size: 20px;
           margin: 0;
           text-align: left;
@@ -306,7 +302,6 @@ const ReqsSectionsStyles = styled.div`
         &:hover {
           background-color: #D6DBDF;
           color: black;
-          border: white 3px solid;
         }
       }
 

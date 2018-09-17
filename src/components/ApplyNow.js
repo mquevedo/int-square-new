@@ -270,10 +270,11 @@ const ReqsSectionsStyles = styled.div`
           p {
             margin: 0;
           }
-          margin-bottom: 20%;
+          margin-bottom: 5%;
           
             @media (min-width: ${({ theme }) => theme.medium.inner}) {
                 margin-bottom: 2%;
+                font-size: 14px;
             }
 
             @media (min-width: ${({ theme }) => theme.medium.start}) {

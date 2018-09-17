@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import './App.css'
 import theme from './theme'
-import { HomePage } from './components/'
+import { HomePage, Header } from './components/'
 
 
 class App extends React.Component {
@@ -11,6 +11,7 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <div className="App">
+          <Header />
           <HomePage />
         </div>
       </ThemeProvider>

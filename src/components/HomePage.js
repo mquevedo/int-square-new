@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {
-  Header,
+  HomePageHeader,
   Timeline,
   Alumni,
   Current,
@@ -18,7 +18,7 @@ import {
 export const HomePage = () => {
   return (
     <HomePageStyles>
-      <Header />
+      <HomePageHeader />
       <Timeline/>
       <Alumni/>  
       <Current/>

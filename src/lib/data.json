@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Home"
+  },
+  {
+    "id": 2,
+    "title": "Our Story"
+  },
+  {
+    "id": 3,
+    "title": "Alumni"
+  },
+  {
+    "id": 4,
+    "title": "Current Int2"
+  },
+  {
+    "id": 5,
+    "title": "Life"
+  },
+  {
+    "id": 6,
+    "title": "Partners"
+  },
+  {
+    "id": 7,
+    "title": "Coming Back"
+  },
+  {
+    "id": 8,
+    "title": "Apply"
+  }
+]

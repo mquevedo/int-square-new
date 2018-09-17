@@ -36,9 +36,11 @@ const SlideStyles = styled.div`
     position:relative;
     overflow: hidden;
     font-family: ${({theme}) => theme.baseFont};
+    @media(min-width: ${({theme}) => theme.medium.start}) {
+      background-position: right center,left center;
+    }
     @media(min-width: ${({theme}) => theme.large.start}) {
       height: 90vh;
-      background-position: right center,left center;
     }
 
     &__bg {

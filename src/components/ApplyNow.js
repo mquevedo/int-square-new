@@ -101,11 +101,12 @@ const ReqsSectionsStyles = styled.div`
         width: 95vw;
         p {
           margin: 0;
-          margin-left: -65%;
+          margin-left: -74%;
         }
 
+
          @media (min-width: ${({ theme }) => theme.medium.start}) {
-           font-size: 35px;
+           font-size: 25px;
           }
 
         @media (min-width: ${({ theme }) => theme.large.start}) {
@@ -117,7 +118,8 @@ const ReqsSectionsStyles = styled.div`
 
         &__sub {
           font-family:  ${({theme}) => theme.secondaryFont};
-          margin-left: -61% !important;
+          margin-left: -70% !important;
+
           @media (min-width: ${({ theme }) => theme.large.start}) {
               margin: 0 !important;
               font-size: 28px;
@@ -165,6 +167,7 @@ const ReqsSectionsStyles = styled.div`
           &--gral-title {
               margin: 0;
               margin-left: -42%;
+              font-weight: bold;
               margin-top: 6%;
           }
 
@@ -173,12 +176,14 @@ const ReqsSectionsStyles = styled.div`
           }
 
           &--junior-title {
+             font-weight: bold;
               margin: 0;
               margin-left: -55%;
               margin-top: 6%;
           }
 
           &--skills-title {
+            font-weight: bold;
               margin: 0;
               margin-left: -65%;
               margin-top: 6%;
@@ -248,16 +253,10 @@ const ReqsSectionsStyles = styled.div`
         }
 
         &__skills {
-          @media (min-width: ${({ theme }) => theme.large.start}) {
-            display: flex;
-            width: 48%;
-            min-height: 50%;
-            justify-content: space-around;
-          }
 
           @media (min-width: ${({ theme }) => theme.medium.start}) {
             display: flex;
-            width: 48%;
+            width: 50%;
             min-height: 50%;
             justify-content: space-around;
           }
@@ -265,13 +264,22 @@ const ReqsSectionsStyles = styled.div`
 
         &__dev {
           flex: 3;
-          font-size: 20px;
+          font-size: 17px;
           margin: 0;
           text-align: left;
           p {
             margin: 0;
           }
           margin-bottom: 20%;
+          
+            @media (min-width: ${({ theme }) => theme.medium.inner}) {
+                margin-bottom: 2%;
+            }
+
+            @media (min-width: ${({ theme }) => theme.medium.start}) {
+                margin-bottom: 15%;
+            }
+
         }
      }
 

@@ -43,6 +43,7 @@ export const ComingBack = () => {
 const ComingBackStyles = styled.div`
     .coming-back {
       padding: 0 5%;
+      padding-bottom: 20vh;
       font-family: ${({theme}) => theme.baseFont};
       &__header {
         text-align: left;

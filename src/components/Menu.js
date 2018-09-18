@@ -4,22 +4,35 @@ import OuterStyledSection from './StyledSlatOuter'
 import InnerStyledSection from './StyledSlatInner'
 import MenuList from '../lib/data'
 
-export class Menu extends Component {
+type Props = {}
+
+type State = {
+  mobileMenuShown: boolean,
+}
+
+export class Menu extends Component<Props, State> {
+  state = {
+    mobileMenuShown: false,
+  }
+
   render() {
+    const { mobileMenuShown } = this.state;
     return (
-      <DesktopMenuStyles className='desktop-menu__outer'>
-        <InnerStyledSection className='desktop-menu__inner'>
-          <nav className='desktop-menu__nav-list'>
-            {
-              _.map((section) =>
-                <li key={section.id}>
-                  <a href="#">{section.title}</a>
-                </li>
-              )(MenuList)
-            }
-          </nav>
-        </InnerStyledSection>
-      </DesktopMenuStyles>
+      <div>
+        <DesktopMenuStyles className='desktop-menu__outer'>
+          <InnerStyledSection className='desktop-menu__inner'>
+            <nav className='desktop-menu__nav-list'>
+              {
+                _.map((section) =>
+                  <li key={section.id}>
+                    <a href="#">{section.title}</a>
+                  </li>
+                )(MenuList)
+              }
+            </nav>
+          </InnerStyledSection>
+        </DesktopMenuStyles>
+      </div>
     )
   }
 }
@@ -33,7 +46,6 @@ const DesktopMenuStyles = OuterStyledSection.extend`
 
   nav {
     width: 100%;
-    ${'' /* height: 70px; */}
     display: flex;
     justify-content: center;
   }
@@ -45,29 +57,27 @@ const DesktopMenuStyles = OuterStyledSection.extend`
     }
 
     &__nav-list {
-      margin: 0 0 0 15%;
-      width: 70%;
+      margin: 0 0 0 5%;
+      width: 90%;
       list-style-type: none;
       display: flex;
       justify-content: space-around;
       padding: 0px;
-
       li {
         white-space: nowrap;
         display: flex;
         justify-content: center;
         align-items: center;
       }
+      a {
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        ${'' /* padding: 15px; */}
+        text-decoration: none;
+        color: ${({ theme }) => theme.white};
+        font-weight: 600 !important;
+      }
     }
-  }
-
-  a {
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
-    ${'' /* padding: 15px; */}
-    text-decoration: none;
-    color: ${({ theme }) => theme.white};
-    font-weight: 800;
   }
 `

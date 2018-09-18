@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Slider from 'react-slick'
-import styled from 'styled-components'
-import InnerStyledSection from './InnerStyledSection'
-import OuterStyledSection from './OuterStyledSection'
+import InnerStyledSection from './StyledSlatInner'
+import OuterStyledSection from './StyledSlatOuter'
 
 export class HomePageHeader extends Component {
   render() {
@@ -17,29 +15,20 @@ export class HomePageHeader extends Component {
     return (
       <HomePageHeaderStyles className='home-page-header__outer'>
         <InnerStyledSection className='home-page-header__inner'>
-          {/* <div className='home-page-header__cover'></div> */}
-
           <div className='home-page-header__image'>
-            <SectionSliderContainer>
-              <div className='carousel'>
-                {/* <Slider {...settings}>
-                  <div className='carousel__item'>
-                    <div className='carousel__container'>
-                      <div className='carousel__item__logo' />
-                      <div className='carousel__item__text'>
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                      </div>
-                      <div className='carousel__item__button'>
-                        <button>¿Cómo aplicar?</button>
-                      </div>
-                    </div>
+            <div className='carousel'>
+              <div className='carousel__item'>
+                <div className='carousel__container'>
+                  <div className='carousel__item__logo' />
+                  <div className='carousel__item__text'>
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                   </div>
-                  <div className='carousel__item'>
-                    <h3>2</h3>
+                  <div className='carousel__item__button'>
+                    <button>¿How to apply?</button>
                   </div>
-                </Slider> */}
+                </div>
               </div>
-            </SectionSliderContainer>
+            </div>
           </div>
         </InnerStyledSection>
       </HomePageHeaderStyles>
@@ -47,50 +36,70 @@ export class HomePageHeader extends Component {
   }
 }
 
-const SectionSliderContainer = styled.div`
-  width: 90%;
+const HomePageHeaderStyles = OuterStyledSection.extend`
+  height: 440px;
+  margin: -80px 0 0 0;
   @media(min-width: ${({ theme }) => theme.medium.start}) {
-    height: 500px;
+    height: 600px;
+    margin: -80px 0 0 0;
   }
-  @media(min-width: ${({ theme }) => theme.large.start}) {
-    heigth: 700px;
+  .home-page-header {
+    &__inner {
+      height: 100%;
+      padding: 0px;
+      margin: 0;
+      width: 100%;
+      max-width: 100% !important;
+      @media (min-width: ${({ theme }) => theme.large.start}) {
+        margin: auto;
+      }
+    }
+
+    &__image {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      background-image: url('/images/header.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media(min-width: ${({ theme }) => theme.medium.end}) {
+        background-position-y: 80%;
+      }
+    }
   }
-  margin: 0 auto;
-  padding-top: 100px;
   .carousel {
 
     &__item {
-      ${'' /* position: absolute; */}
-      ${'' /* background-color: red; */}
-      width: 60% !important;
-      margin: 0 0 0 20%;
+      width: 80%;
+      margin: 80px 10%;
+      float: right;
 
       &__logo {
         float: right;
-        ${'' /* border: 1px solid red; */}
-        width: 100%;
-        height: 125px;
-        background-image: url('/assets/img/Logo-Int2.png');
+        width: 370px;
+        height: 150px;
+        background-image: url('/images/logo--int2.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
 
       &__text {
-        ${'' /* border: 1px solid black; */}
+        color: ${({ theme }) => theme.white};
+        width: 370px;
         float: right;
         clear: both;
         text-align: justify;
+        font-weight: 600;
       }
 
       &__button {
-        width: 100%;
+        width: 370px;
         margin: 50px 0 0 0;
-        ${'' /* border: 1px solid yellow; */}
         float: right;
 
         button {
           border-radius: 5px;
-          width: 75%;
+          width: 90%;
           height: 85px;
           border: 3px solid white;
           background-color: transparent;
@@ -100,19 +109,35 @@ const SectionSliderContainer = styled.div`
           cursor: pointer;
         }
       }
+      @media(max-width: ${({ theme }) => theme.small.end}) {
+          margin: 60px 10%;
+
+          &__logo {
+          width: 100%;
+          height: 125px;
+        }
+
+        &__text {
+          width: 100%;
+          font-size: 0.85em;
+        }
+        &__button {
+          width: 100%;
+          margin: 20px 0 0 0;
+        }
+      }
     }
 
     &__container {
-        ${'' /* position: absolute; */}
         float: right;
         width: 50%;
-        height: 150px;
-        ${'' /* border: 1px solid green; */}
+        @media(max-width: ${({ theme }) => theme.small.end}) {
+          width: 100%;
+        }
       }
 
-    .slick-slide {
+  .slick-slide {
     height: 450px !important;
-    ${'' /* display: flex; */}
     flex-flow: column;
     align-items: right;
   }
@@ -131,52 +156,4 @@ const SectionSliderContainer = styled.div`
     }
   }
 }
-`;
-
-const HomePageHeaderStyles = OuterStyledSection.extend`
-  height: 300px;
-  margin: -70px 0 0 0;
-  @media(min-width: ${({ theme }) => theme.medium.start}) {
-    height: 600px;
-  }
-  @media(min-width: ${({ theme }) => theme.large.start}) {
-    heigth: 800px;
-  }
-  .home-page-header {
-    &__inner {
-      height: 100%;
-      padding: 0px;
-      margin: 0;
-      width: 100%;
-      max-width: 100% !important;
-      @media (min-width: ${({ theme }) => theme.large.start}) {
-        margin: auto;
-      }
-    }
-    
-    &__cover {
-      z-index: 1;
-      width: 100%;
-      ${'' /* border: 1px solid red; */}
-      position: absolute;
-      background-color: rgba(0,0,0,0.3);
-      @media(min-width: ${({ theme }) => theme.medium.start}) {
-        height: 600px;
-      }
-      @media(min-width: ${({ theme }) => theme.large.start}) {
-        heigth: 800px;
-      }
-    }
-
-    &__image {
-      background-color: white;
-      width: 100%;
-      height: 100%;
-      background-image: url('/images/header.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position-x: 0%;
-      background-position-y: 80%;
-    }
-  }
 `

@@ -38,10 +38,12 @@ export class HomePageHeader extends Component {
 
 const HomePageHeaderStyles = OuterStyledSection.extend`
   height: 440px;
-  margin: -80px 0 0 0;
+  overflow: visible;
+  ${'' /* margin: -80px 0 0 0; */}
   @media(min-width: ${({ theme }) => theme.medium.start}) {
     height: 600px;
-    margin: -80px 0 0 0;
+    ${'' /* top: 0; */}
+    ${'' /* margin: -80px 0 0 0; */}
   }
   .home-page-header {
     &__inner {
@@ -56,14 +58,25 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
     }
 
     &__image {
+      z-index: -99999;
+      position: absolute;
       background-color: white;
+      top: 0;
       width: 100%;
-      height: 100%;
+      height: 440px;
       background-image: url('/images/header.png');
       background-repeat: no-repeat;
       background-size: cover;
       @media(min-width: ${({ theme }) => theme.medium.end}) {
         background-position-y: 80%;
+      }
+      @media(min-width: ${({ theme }) => theme.medium.start}) {
+        height: 600px;
+        ${'' /* top: 0; */}
+        ${'' /* margin: -80px 0 0 0; */}
+      }
+      @media(max-width: ${({ theme }) => theme.small.end}) {
+
       }
     }
   }
@@ -110,7 +123,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         }
       }
       @media(max-width: ${({ theme }) => theme.small.end}) {
-          margin: 60px 10%;
+          margin: 70px 10%;
 
           &__logo {
           width: 100%;

@@ -17,7 +17,7 @@ export class TimeLine extends Component {
 }
 
 const Title = styled.div`
-  padding: 50px 0 0 40px;
+  padding: 0 0 0 40px;
   h2 {
     margin: 0;
     text-align: left;

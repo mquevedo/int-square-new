@@ -66,7 +66,7 @@ export const ApplyNow = () => {
             </div>
           </div>
           <a href={EXTERNAL_LINKS.APPLY_NOW}>
-            <div className='req__button' onClick={EXTERNAL_LINKS.APPLY_NOW}>
+            <div className='req__button'>
                 Online Application Form
             </div>
           </a>
@@ -257,6 +257,10 @@ const ReqsSectionsStyles = styled.div`
         }
 
         &__skills {
+           @media (min-width: ${({ theme }) => theme.medium.inner}) {
+            width: 100%;
+            justify-content: space-around;
+          }
 
           @media (min-width: ${({ theme }) => theme.medium.start}) {
             display: flex;

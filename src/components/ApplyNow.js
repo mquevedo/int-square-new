@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import OuterStyledSection from './StyledSlatOuter'
 import InnerStyledSection from './StyledSlatInner'
 
+import { EXTERNAL_LINKS } from '../lib/appConstants'
+
 export const ApplyNow = () => {
   return (
     <ReqsSectionsStyles className='req'>
@@ -63,9 +65,11 @@ export const ApplyNow = () => {
               </div>
             </div>
           </div>
-          <div className='req__button'>
+          <a href={EXTERNAL_LINKS.APPLY_NOW}>
+            <div className='req__button' onClick={EXTERNAL_LINKS.APPLY_NOW}>
                 Online Application Form
-          </div>
+            </div>
+          </a>
         </InnerStyledSection>
       </OuterStyledSection>
     </ReqsSectionsStyles>
@@ -81,7 +85,7 @@ const ReqsSectionsStyles = styled.div`
       display: flex;
       background-size: cover;
       background-position: bottom;
-      background-rep0eat: no-repeat;
+      background-repeat: no-repeat;
       background-image: url('https://int2.blob.core.windows.net/public/applynowsection/applynow-fondo.png');
       @media (min-width: ${({ theme }) => theme.large.start}) {
           height: 70%; 
@@ -150,7 +154,7 @@ const ReqsSectionsStyles = styled.div`
             list-style-type: none;
             margin: 0 32px;
             align-items: flex-start;
-            padding: 0; 
+            padding: 0;
             text-align: left;
             margin-left: 2%;
 
@@ -278,7 +282,8 @@ const ReqsSectionsStyles = styled.div`
             }
 
             @media (min-width: ${({ theme }) => theme.medium.start}) {
-                margin-bottom: 15%;
+               font-size: 15px;
+               margin-bottom: 15%;
             }
 
         }

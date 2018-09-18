@@ -64,6 +64,7 @@ const ComingBackStyles = styled.div`
       }
 
       &__item {
+        text-align: center;
         @media(min-width: ${({theme}) => theme.medium.start}) {
           text-align: left;
         }

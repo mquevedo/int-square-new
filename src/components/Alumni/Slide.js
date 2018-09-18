@@ -26,26 +26,28 @@ export class Slide extends Component {
 
 const SlideStyles = styled.div`
   .alumni-slide {
-    height: 50vh;
+    height: 70vh;
     text-align: center;
     color: white;
     background: url(${({pic}) => pic}), #013B6D;
-    background-size: contain;
+    background-size: 100% 75%;
     background-position: bottom center,top center;
     background-repeat: no-repeat;
     position:relative;
     overflow: hidden;
     font-family: ${({theme}) => theme.baseFont};
     @media(min-width: ${({theme}) => theme.medium.start}) {
+      background-size: 50% 100%;
       background-position: right center,left center;
     }
     @media(min-width: ${({theme}) => theme.large.start}) {
       height: 90vh;
+      background-size: 60% 100%;
     }
 
     &__bg {
       background: #013B6D;
-      @media(min-width: ${({theme}) => theme.medium.start}) {
+      @media(min-width: ${({theme}) => theme.large.start}) {
         width: 50%;
         height: 100%;
       }
@@ -62,23 +64,21 @@ const SlideStyles = styled.div`
 
     &__info {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
       width: 50%;
       height: 100%;
       padding: 25px;
       text-align: left;
       padding-left: 5vw;
+      transform: translateY(-25%);
 
       &__quote {
-        margin-top: 35%;
-        font-size: 2em;
+        font-size: 1em;
         @media(min-width: ${({theme}) => theme.medium.start}) {
-          margin-top: 50%;
-          font-size: 2em;
+          font-size: 1.5em;
         }
         @media(min-width: ${({theme}) => theme.large.start}) {
-          margin-top: 35%;
           font-size: 2em;
         }
       }
@@ -96,10 +96,11 @@ const SlideStyles = styled.div`
       }
       
       &__name {
-        font-size: 1.1em;
+        font-size: 1em;
         margin: 0;
         @media(min-width: ${({theme}) => theme.large.start}) {
           margin:0 40px;
+          font-size: 1.25em;
         }
       }
 

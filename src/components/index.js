@@ -1,6 +1,7 @@
 
 export * from './HomePage'
 export * from './Header'
+export * from './TimeLine/TimeLine'
 export * from './Alumni'
 export * from './CurrentInterns'
 export * from './Life'

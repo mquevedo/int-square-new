@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import {
   HomePageHeader,
+  TimeLine,
   Alumni,
   Current,
   Life,
@@ -18,6 +19,7 @@ export const HomePage = () => {
   return (
     <HomePageStyles>
       <HomePageHeader />
+      <TimeLine/>
       <Alumni/>  
       <Current/>
       <Life/>

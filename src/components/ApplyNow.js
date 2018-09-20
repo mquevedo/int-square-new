@@ -105,7 +105,7 @@ const ReqsSectionsStyles = styled.div`
         width: 95vw;
         p {
           margin: 0;
-          margin-left: -74%;
+          margin-left: 1%;
         }
 
 
@@ -115,17 +115,14 @@ const ReqsSectionsStyles = styled.div`
 
         @media (min-width: ${({ theme }) => theme.large.start}) {
           p {
-            margin: 0;
-            margin-left: 8%!important;
+            margin-left: 8%;
           }
         }
 
         &__sub {
           font-family:  ${({theme}) => theme.secondaryFont};
-          margin-left: -70% !important;
 
           @media (min-width: ${({ theme }) => theme.large.start}) {
-              margin: 0 !important;
               font-size: 28px;
           }
         }
@@ -133,10 +130,6 @@ const ReqsSectionsStyles = styled.div`
         @media (min-width: ${({ theme }) => theme.large.start}) {
             text-align: left;
             margin-left: -6%;
-            p {
-              margin-left: 0%;
-              font-size: 33px;
-            }
         }
      }
 
@@ -298,19 +291,17 @@ const ReqsSectionsStyles = styled.div`
      }
 
      &__button {
-      font-family: ${({theme}) => theme.baseFont};
+        font-family: ${({theme}) => theme.baseFont};
         font-weight: bold;
         background-color: transparent;
         border: white 1px solid;
         border-radius: 8px;
         color: white;
-        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
         padding: 20px;
-        margin: 4px 2px;
         cursor: pointer;
 
         @media (min-width: ${({ theme }) => theme.large.start}) {

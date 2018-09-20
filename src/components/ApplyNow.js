@@ -48,7 +48,7 @@ export const ApplyNow = () => {
                   <li>
                         Currently enrolled in a Master's Program in Computer Sciences
                         (applicants with a Bachelors Degree in CS waiting to outgrow their
-                        firts opportunity are also welcome to apply) 
+                        first opportunity are also welcome to apply) 
                   </li>
                 </ul>
               </div>
@@ -223,6 +223,10 @@ const ReqsSectionsStyles = styled.div`
           background-position: center;
           background-repeat: no-repeat;
 
+          @media (min-width: ${({ theme }) => theme.small.end}) {
+            margin-left: 42%;
+          }
+
           &--gral-req {
               background-image: url('https://int2.blob.core.windows.net/public/svg/Gral Requirements.svg');
               flex: 1;
@@ -294,10 +298,8 @@ const ReqsSectionsStyles = styled.div`
      }
 
      &__button {
-        font-family: ${({theme}) => theme.baseFont};
+      font-family: ${({theme}) => theme.baseFont};
         font-weight: bold;
-        font-size: 20px !important;
-        margin-bottom: 20% !important;
         background-color: transparent;
         border: white 1px solid;
         border-radius: 8px;
@@ -307,14 +309,12 @@ const ReqsSectionsStyles = styled.div`
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        padding: 20px !important;
+        padding: 20px;
         margin: 4px 2px;
         cursor: pointer;
 
         @media (min-width: ${({ theme }) => theme.large.start}) {
-            margin-bottom: 10% !important;
-            padding: 30px !important;
-            font-size: 20px !important;
+            padding: 30px;
         }
 
         &:hover {

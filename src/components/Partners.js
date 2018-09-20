@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import OuterStyledSection from './StyledSlatOuter'
-import InnerStyledSection from './StyledSlatInner'
 
 export const Partners = () => {
   return (
@@ -11,16 +10,13 @@ export const Partners = () => {
         <div className='partners__data'>
           <p> OUR PARTNERS </p>
           <div className='partners__data__gen-ui'>
-            <div className='partners__data__gen-ui--layer'>
-              <div className='partners__data__gen-ui--layer--logo'>
-                <p> SEATTLE, WA </p></div>
+            <div className='partners__data__gen-ui--logo'>
+              <p> SEATTLE, WA </p>
             </div>
           </div>
           <div className='partners__data__ibes'>
-            <div className='partners__data__ibes--layer'>
-              <div className='partners__data__ibes--layer--logo'>
-                <p> GERMANY </p>
-              </div>
+            <div className='partners__data__ibes--logo'>
+              <p> GERMANY </p>
             </div>
           </div>
         </div>
@@ -40,8 +36,6 @@ const PartnersSectionStyled = styled.div`
         }
 
         &__data {
-            justify-content: space-evenly;
-            
             p {
                 margin-right: 70px;
                 color: ${({theme}) => theme.blue};
@@ -74,22 +68,17 @@ const PartnersSectionStyled = styled.div`
             }   
 
               &__gen-ui {
-                  width: 300px;
                   height: 300px;
-                  background-image: url('https://int2.blob.core.windows.net/public/images/gen-ui-programmers.jpg');
+                  background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-gen-ui.png');
                   background-size: cover;
                   background-repeat: no-repeat;
-                  background-position: center;      
-
-                  &--layer {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    background-color: rgba(91, 187, 87, 0.7);
-                    width: 100%;
-                    height: 100%;
+                  background-position: center;     
 
                     &--logo {
-                        background-image: url('https://int2.blob.core.windows.net/public/images/general-ui-w.png');
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: center;
+                        background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-gen-ui-logo.png');
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;      
@@ -98,43 +87,29 @@ const PartnersSectionStyled = styled.div`
                         p {
                             font-family: ${({theme}) => theme.baseFont};
                             margin: 0;
-                            margin-top: 80%;
+                            margin-top: 50%;
                             color: white;
                         }
 
                         @media (min-width: ${({ theme }) => theme.medium.start}) {  
-                            margin-top: 0% !important;
-                            margin-bottom: 20%;
-                            width: 60%;
-                            height: 60%;
                             p {
-                                width: 100%;
-                                margin-left: 20%;
-                                margin-top: 200px;
+                                margin-left: 10%;
                                 font-size: 25px;
                             }
                         } 
 
                         @media (min-width: ${({ theme }) => theme.medium.end}) {  
-                            margin-top: 75%;
                             p {
-                                margin-top: 200px;
+                                font-size: 40px;
                             }
                         } 
 
                         @media (min-width: ${({ theme }) => theme.large.start}) {  
-                            margin-top: 0%;
-                            margin-bottom: 0;
-                            width: 60%;
-                            height: 100% !important;
                             p {
-                                margin-top: 90%;
-                                margin-left: 10%;
-                                font-size: 30px;
+                              font-size: 50px;
                             }
                         } 
                     }
-                  }
 
                 @media (min-width: ${({ theme }) => theme.medium.start}) {
                     width: 50%;
@@ -146,61 +121,52 @@ const PartnersSectionStyled = styled.div`
               &__ibes {
                   width: 300px;
                   height: 300px;
-                  background-image: url('https://int2.blob.core.windows.net/public/images/ibes-programers.jpg');
+                  background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-ibes.jpg');
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;      
-
-                  &--layer {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    background-color: rgba(79, 109, 145, 0.7);
-                    width: 100%;
-                    height: 100%;
+                  
 
                     &--logo {
-                        margin: 20px;
-                        background-image: url('https://int2.blob.core.windows.net/public/images/Ibes-logo-w.png');
+                        display: flex;
+                        flex-direction: column-reverse;
+                        flex-wrap: wrap;
+                        background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-ibes-logo.png');
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;      
                         width: 50%;
                         height: 100%;
+                        margin-left: 4%;
                         p {
                             font-family: ${({theme}) => theme.baseFont};
                             margin: 0;
-                            margin-top: 115%;
+                            margin-bottom: 56%;
                             color: white;
                         }
 
                         @media (min-width: ${({ theme }) => theme.medium.start}) {
-                            margin-bottom: 38%;
-                            width: 30%;
-                            height: 40%;
                             p {
-                                margin-top: 146px;
-                                font-size: 28px;
+                                margin-bottom: 105%;
+                                font-size: 35px;
                             }
                         } 
 
                         @media (min-width: ${({ theme }) => theme.medium.end}) {  
-                            height: 30%;
                             p {
-                                margin-top: 130px;
+                                margin-bottom: 68%;
+                                font-size: 40px;
                             }
                         } 
 
                         @media (min-width: ${({ theme }) => theme.large.start}) {
-                            margin-bottom: 0%;
-                            width: 40%;
-                            height: 100%;   
                             p {
-                                margin-top: 125%;
-                                font-size: 45px;
+                                font-size: 60px;
+                                margin-bottom: 35%;
+                                
                             }
                         } 
-                    }
-                  }   
+                    }  
                   @media (min-width: ${({ theme }) => theme.medium.start}) {
                         width: 50%;
                         height: 550px;

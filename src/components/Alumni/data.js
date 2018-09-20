@@ -1,7 +1,10 @@
 const data = [
   {
     name:'René García',
-    pic:'https://int2.blob.core.windows.net/public/alumnisection/alumni-rene.jpg',
+    pics: {
+      large: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-rene.jpg',
+      circle: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-rene-circle.png'
+    },
     year: '2014',
     bio: [
       {year:'2007',text: 'Graduated from Externado San Jose´s High School.'},
@@ -13,7 +16,10 @@ const data = [
   },
   {
     name:'Juan Moreno',
-    pic:'https://int2.blob.core.windows.net/public/alumnisection/alumni-juan.jpg',
+    pics:{
+      large: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-juan.jpg',
+      circle: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-juan-circle.png'
+    },
     year: '2015',
     bio: [
       {year:'2007',text: 'Graduated from Liceo Salvadoreño´s High School.'},
@@ -23,7 +29,10 @@ const data = [
   },
   {
     name:'Carlos Alvarado',
-    pic:'https://int2.blob.core.windows.net/public/alumnisection/alumni-carlos.jpg',
+    pics:{
+      large: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-carlos.jpg',
+      circle: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-carlos-circle.png'
+    },
     year: '2016',
     bio: [
       {year:'2007',text: 'Graduated from Joya de Cerén High School.'},
@@ -35,7 +44,10 @@ const data = [
   },
   {
     name:'Scarlett Tejada',
-    pic:'https://int2.blob.core.windows.net/public/alumnisection/alumni-scarlett.jpg',
+    pics: {
+      large: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-scarlett.jpg',
+      circle: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-scarlett-circle.png'
+    },
     year: '2017',
     bio: [
       {year:'2008',text: 'Graduated Externado San Jose´s High School.'},
@@ -46,7 +58,10 @@ const data = [
   },
   {
     name:'Stanley Jovel',
-    pic:'https://int2.blob.core.windows.net/public/alumnisection/alumni-stanley.jpg',
+    pics: {
+      large: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-stanley.jpg',
+      circle: 'https://int2.blob.core.windows.net/public/alumnisection/alumni-stanley-circle.png'
+    },
     year: '2017',
     bio: [
       {year:'2012',text: 'Graduated High School.'},

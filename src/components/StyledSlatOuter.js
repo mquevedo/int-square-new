@@ -6,9 +6,10 @@ const StyledSlatOuter = styled.section`
   overflow: hidden;
   font-family: ${theme.baseFont};
   font-weight: normal;
+  text-align: center;
   width: 100%;
   @media (min-width: ${theme.xlarge.inner}) {
-    max-width: ${theme.xlarge.outer};
+   /* max-width: ${theme.xlarge.outer}; */
   };
 `
 

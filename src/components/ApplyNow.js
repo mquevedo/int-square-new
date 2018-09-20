@@ -99,6 +99,7 @@ const ReqsSectionsStyles = styled.div`
      &__apply {
         font-size: 18px;
         color: ${({theme}) => theme.white};
+        text-align: left;
         font-weight: bold;
         font-family:  ${({theme}) => theme.baseFont};
         margin-top: 6%;

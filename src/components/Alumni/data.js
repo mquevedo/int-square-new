@@ -67,6 +67,7 @@ const data = [
       {year:'2012',text: 'Graduated High School.'},
       {year:'2013',text: 'Obtained Technical degree'},
       {year:'2017',text: 'Selected for the Int2 Internship in GenUI, he traveled to Seattle. Starting as a jr web developer  he soon became a Full Stack Engineer.'},
+      {year:'2018',text: 'Graduated from Software Engineer in Computer Science in Universidad Don Bosco In 2018.'},
       {year:'2018',text: 'Currently based in El Salvador, Stanley continues developing web and mobile solutions.'},
     ],
   },

@@ -89,6 +89,7 @@ const PartnersSectionStyled = styled.div`
                             margin: 0;
                             margin-top: 50%;
                             color: white;
+                            margin-left: 10%;
                         }
 
                         @media (min-width: ${({ theme }) => theme.medium.start}) {  

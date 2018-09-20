@@ -10,7 +10,7 @@ export const BrandsSection = () => {
     <BrandsSectionStyle>
       <StyledSlatOuter className='brands__outer'>
         <StyledSlatInner className='brands__inner'>
-          <p>Friends who make INT2 possible:</p>
+          <p>Friends who make Int2 possible:</p>
           <a
             className='brands__logo brands__logo--us-embassy'
             href={EXTERNAL_LINKS.US_EMBASSY}

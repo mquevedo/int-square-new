@@ -65,7 +65,7 @@ export const ApplyNow = () => {
               </div>
             </div>
           </div>
-          <a href={EXTERNAL_LINKS.APPLY_NOW}>
+          <a href={EXTERNAL_LINKS.APPLY_NOW} target='blank'>
             <div className='req__button'>
                 Online Application Form
             </div>

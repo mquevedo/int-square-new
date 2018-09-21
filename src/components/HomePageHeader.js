@@ -119,6 +119,10 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
           font-weight: 800;
           font-size: 1.5em;
           cursor: pointer;
+          &:hover {
+            background-color: #D6DBDF;
+            color: black;
+          }
         }
       }
       @media(max-width: ${({ theme }) => theme.small.end}) {

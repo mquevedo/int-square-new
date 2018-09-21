@@ -88,7 +88,7 @@ const SlideStyles = styled.div`
         }
 
         @media(min-width: ${({theme}) => theme.large.start}) {
-         margin-top: 5vh;
+         margin-top: 2vh;
         }
       }
 
@@ -149,7 +149,7 @@ const SlideStyles = styled.div`
           font-size: 1em;
         }
         @media(min-width: ${({theme}) => theme.large.start}) {
-          font-size: 1.25em;
+          font-size: 1.2em;
           margin-bottom: 20px;
         }
       }

@@ -2,31 +2,27 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { EventUp } from './EventUp'
 import { EventDown } from './EventDown'
+import data from '../../lib/timeline'
 export class Events extends Component {
   render() {
     return (
       <Container>
         <Line />
-        <EventDown
-          title='2014'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventUp 
-          title='2015'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventDown
-          title='2016'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventUp
-          title='2017'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventDown
-          title='2018'
-          text='lorem ipsum dolor sit aem'
-        />
+        {
+          data.map((section, index) => {
+            return (index % 2) === 0
+              ?
+              <EventUp
+                title={section.title}
+                text={section.text}
+              />
+              :
+              <EventDown
+                title={section.title}
+                text={section.text}
+              />
+          })
+        }
       </Container>
     )
   }

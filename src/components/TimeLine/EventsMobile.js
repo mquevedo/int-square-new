@@ -1,32 +1,29 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { EventLeft } from './EventLeft';
-import { EventRight } from './EventRight';
+import { EventLeft } from './EventLeft'
+import { EventRight } from './EventRight'
+import data from '../../lib/timeline'
+
 export class EventsMobile extends Component {
   render() {
     return (
       <Container>
         {/* <Line /> */}
-        <EventLeft
-          title='2014'
-          text='lorem ipsum dolor in mobile'
-        />
-        <EventRight
-          title='2015'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventLeft
-          title='2016'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventRight
-          title='2017'
-          text='lorem ipsum dolor sit aem'
-        />
-        <EventLeft
-          title='2018'
-          text='lorem ipsum dolor sit aem'
-        />
+        {
+          data.map((section, index) => {
+            return (index % 2) === 0
+              ?
+              <EventRight
+                title={section.title}
+                text={section.text}
+              />
+              :
+              <EventLeft
+                title={section.title}
+                text={section.text}
+              />
+          })
+        }
       </Container>
     )
   }
@@ -43,7 +40,7 @@ const Container = styled.div`
   ${'' /* position: absolute; */}
   ${'' /* border: 1px solid black; */}
   display: none;
-  @media(max-width: ${({ theme }) => theme.medium.end}) {
+  @media(max-width: 1023px) {
     ${'' /* display: block; */}
     display: inline;
   }

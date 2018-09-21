@@ -25,7 +25,7 @@ export class Slide extends Component {
 
 const SlideStyles = styled.div`
   .alumni-slide {
-    height: 75vh;
+    height: 80vh;
     text-align: center;
     color: white;
     background: url(${({pics}) => pics.circle}), #013B6D;
@@ -37,7 +37,7 @@ const SlideStyles = styled.div`
     font-family: ${({theme}) => theme.baseFont};
 
     @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: landscape){
-      height: 85vh;
+      height: 95vh;
       background: url(${({pics}) => pics.large}), #013B6D;
       background-repeat: no-repeat;
       background-size: contain;
@@ -73,7 +73,7 @@ const SlideStyles = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      padding: 25px;
+      padding: 20px;
       text-align: left;
       padding-left: 2vw;
       @media(min-width: ${({theme}) => theme.medium.start}) {
@@ -82,7 +82,14 @@ const SlideStyles = styled.div`
       }
 
       &__title > h1{
-        margin-top: 0;
+        margin: 5px;
+        @media(min-width: ${({theme}) => theme.medium.start}) {
+         margin-top: 1vh;
+        }
+
+        @media(min-width: ${({theme}) => theme.large.start}) {
+         margin-top: 5vh;
+        }
       }
 
       &__name {
@@ -114,11 +121,18 @@ const SlideStyles = styled.div`
       }
 
       &__bio {
-        margin-top: 30%;
+        margin-top: 15vh;
         padding-left: 15px;
-        @media(min-width: 500px) {
-          margin-top: 25px;
+        @media(max-width: ${({theme}) => theme.small.end}) and (orientation: landscape) {
+          margin-top: 2vh;
         }
+        @media(min-width: ${({theme}) => theme.medium.start}) {
+          margin-top: 3vh;
+        }
+        @media(min-width: ${({theme}) => theme.large.start}) {
+          margin-top: 5vh;
+        }
+
         li{
         margin:0;
         margin-bottom: 7px;
@@ -127,17 +141,16 @@ const SlideStyles = styled.div`
           font-weight: bold;
         }
         @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: landscape){
-          margin-bottom: 10px;
-          margin-top: 10px;
-          font-size: 0.7em;
+          margin-bottom: 5px;
+          font-size: 12px;
         }
         @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: portrait){
-          margin-bottom: 20px;
-          margin-top: 25px;
+          margin-bottom: 10px;
           font-size: 1em;
         }
         @media(min-width: ${({theme}) => theme.large.start}) {
           font-size: 1.25em;
+          margin-bottom: 20px;
         }
       }
       }

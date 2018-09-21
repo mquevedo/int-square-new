@@ -16,16 +16,30 @@ export class MobileMenu extends Component {
   }
 
   render() {
+
+    const BarsIcon = <i
+      className='mobile-menu__button fa fa-bars'
+      onClick={this.toggleMobileMenu}
+    />
+
+    const CloseIcon = <i
+      className='mobile-menu__button fa fa-times'
+      onClick={this.toggleMobileMenu}
+    />
+
     return (
       <MobileMenuStyles
         mobileMenuShown={this.state.mobileMenuShown}
       >
         <StyledSlatInner className='mobile-menu__inner'>
           <div className='mobile-menu__logo' />
-          <button
-            className='mobile-menu__button'
-            onClick={this.toggleMobileMenu}
-          />
+          {
+            this.state.mobileMenuShown
+              ?
+              CloseIcon
+              :
+              BarsIcon
+          }
         </StyledSlatInner>
         {this.state.mobileMenuShown && <Content handleOnClick={this.toggleMobileMenu} />}
         {/* <Content /> */}
@@ -61,18 +75,17 @@ const MobileMenuStyles = StyledSlatOuter.extend`
         background-size: 100% 100%;
       }
      &__button {
+        cursor: pointer;
+        line-height: 45px;
+        font-size: 30px;
+        color: white;
         position: absolute;
         right: 25px;
         top: 15px;
         width: 50px;
         height: 50px;
         border-radius: 3px;
-        border: 2px solid ${({ theme }) => theme.blue};
-        background-image: ${({ mobileMenuShown }) => mobileMenuShown ? 'url(/svg/icon--x-red.svg)' : 'url(svg/icon--hamburger-red.svg)'};
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-size: 25px;
+        border: 2px solid ${({ theme }) => theme.white};
         @media (min-width: ${({ theme }) => theme.large.start}) {
           display: none;
         }

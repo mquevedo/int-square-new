@@ -25,7 +25,7 @@ export class Slide extends Component {
 
 const SlideStyles = styled.div`
   .alumni-slide {
-    height: 60vh;
+    height: 75vh;
     text-align: center;
     color: white;
     background: url(${({pics}) => pics.circle}), #013B6D;
@@ -121,7 +121,7 @@ const SlideStyles = styled.div`
         }
         li{
         margin:0;
-        margin-bottom: 15px;
+        margin-bottom: 7px;
         font-size: 0.8em;
         span {
           font-weight: bold;

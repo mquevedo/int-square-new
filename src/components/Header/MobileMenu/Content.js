@@ -2,9 +2,9 @@
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
 
-import StyledSlatOuter from '../StyledSlatOuter'
-import StyledSlatInner from '../StyledSlatInner'
-import SectionsData from '../../lib/data'
+import StyledSlatOuter from '../../StyledSlatOuter'
+import StyledSlatInner from '../../StyledSlatInner'
+import SectionsData from '../../../lib/data'
 
 export class Content extends Component {
   render() {

@@ -18,7 +18,7 @@ export class HomePageHeader extends Component {
                 </div>
                 <div className='carousel__item__button'>
                   <a
-                    href='#apply'
+                    href='#apply-now'
                   >
                     ¿How to apply?
                   </a>

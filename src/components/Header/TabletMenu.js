@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
-import OuterStyledSection from './StyledSlatOuter'
-import InnerStyledSection from './StyledSlatInner'
-import MenuList from '../lib/data'
+import OuterStyledSection from '../StyledSlatOuter'
+import InnerStyledSection from '../StyledSlatInner'
+import MenuList from '../../lib/data'
 
 type Props = {}
 

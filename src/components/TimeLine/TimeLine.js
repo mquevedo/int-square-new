@@ -7,7 +7,7 @@ import { EventsMobile } from './EventsMobile';
 export class TimeLine extends Component {
   render() {
     return (
-      <TimeLineStyles>
+      <TimeLineStyles id='ourstory'>
         <Title>
           <h2>OUR STORY</h2>
         </Title>

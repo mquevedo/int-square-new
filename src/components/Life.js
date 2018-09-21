@@ -7,7 +7,7 @@ import StyledSlatOuter from './StyledSlatOuter';
 export class Life extends Component {
   render() {
     return(
-      <LifeStyles className='lifeasint'>
+      <LifeStyles className='lifeasint' id='lifeasint'>
         <StyledSlatInner className='lifeasint__inner'>
           <div className='lifeasint__title'>
             <p>

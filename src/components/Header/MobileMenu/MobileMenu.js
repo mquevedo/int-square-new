@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
-import StyledSlatOuter from '../StyledSlatOuter'
-import StyledSlatInner from '../StyledSlatInner'
+import StyledSlatOuter from '../../StyledSlatOuter'
+import StyledSlatInner from '../../StyledSlatInner'
 import { Content } from './Content'
 
 export class MobileMenu extends Component {

@@ -2,27 +2,22 @@
   {
     "id": 1,
     "title": "Home",
-    "slug": ""
+    "slug": "#"
   },
   {
     "id": 2,
     "title": "Our Story",
-    "slug": ""
+    "slug": "#ourstory"
   },
   {
     "id": 3,
     "title": "Alumni",
-    "slug": ""
-  },
-  {
-    "id": 4,
-    "title": "Current Int2",
-    "slug": ""
+    "slug": "#alumni"
   },
   {
     "id": 5,
     "title": "Life",
-    "slug": ""
+    "slug": "#lifeasint"
   },
   {
     "id": 6,
@@ -32,11 +27,11 @@
   {
     "id": 7,
     "title": "Coming Back",
-    "slug": ""
+    "slug": "#coming-back"
   },
   {
     "id": 8,
     "title": "Apply",
-    "slug": ""
+    "slug": "#apply-now"
   }
 ]

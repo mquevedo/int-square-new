@@ -33,7 +33,7 @@ export class HomePageHeader extends Component {
 }
 
 const HomePageHeaderStyles = OuterStyledSection.extend`
-  height: 440px;
+  height: 500px;
   overflow: visible;
   ${'' /* margin: -80px 0 0 0; */}
   @media(min-width: ${({ theme }) => theme.medium.start}) {
@@ -72,7 +72,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         ${'' /* margin: -80px 0 0 0; */}
       }
       @media(max-width: ${({ theme }) => theme.small.end}) {
-        height: 500px;
+        height: 550px;
       }
     }
   }

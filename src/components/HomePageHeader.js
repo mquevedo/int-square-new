@@ -99,7 +99,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         clear: both;
         text-align: justify;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1.05em;
       }
 
       &__button {
@@ -109,7 +109,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         float: right;
         a {
           text-decoration: none;
-          padding: 25px 80px;
+          padding: 20px 25px;
           border-radius: 5px;
           ${'' /* width: 90%; */}
           ${'' /* height: 85px; */}
@@ -117,7 +117,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
           background-color: transparent;
           color: white;
           font-weight: 800;
-          font-size: 1.5em;
+          font-size: 1.3em;
           cursor: pointer;
           &:hover {
             background-color: #D6DBDF;

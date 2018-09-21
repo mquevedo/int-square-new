@@ -31,7 +31,7 @@ const Content = styled.div`
   padding: 5px;
   margin: 0 5px 0 5px;
   padding-bottom: 300px;
-  max-width: 100%;
+  max-width: 200px;
   border-top: 2px solid ${({ theme }) => theme.blue};
   ${'' /* border: 1px solid red; */}
 `

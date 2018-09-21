@@ -60,7 +60,7 @@ const LifeStyles = StyledSlatOuter.extend`
         padding-left: 50px;
         color: ${({ theme }) => theme.white};
         font-weight: 200;
-        font-size: 1.9em;
+        font-size: 1.5em;
         text-align: left;
       }
     }
@@ -84,7 +84,7 @@ const LifeStyles = StyledSlatOuter.extend`
       &__text {
         width: 85%;
         p {
-          font-size: 1.6em;
+          font-size: 1.3em;
         }
       }
     }
@@ -93,9 +93,9 @@ const LifeStyles = StyledSlatOuter.extend`
     height: 645px;
     .lifeasint {
       &__text {
-        width: 45%;
+        width: 55%;
         p {
-          font-size: 1.8em;
+          font-size: 1.5em;
         }
       }
     }

@@ -13,6 +13,13 @@ export class TimeLine extends Component {
         </Title>
         <Events />
         <EventsMobile />
+        <Title>
+          <h2
+            style={{
+              fontSize: '1.5em'
+            }}
+          > “Acceptance rate for this program is 5%”</h2>
+        </Title>
       </TimeLineStyles>
     )
   }

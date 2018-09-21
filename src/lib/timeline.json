@@ -1,32 +1,27 @@
 [
   {
     "id": 1,
-    "title": "2013",
-    "text": "Started offering high-skilled Salvadoran professionals to International Companies"
+    "title": "2013/2014",
+    "text": "First cohort USA"
   },
   {
     "id": 2,
-    "title": "2014",
-    "text": "Korinver starts operations exporting to US (1st Ally USA)"
+    "title": "2015",
+    "text": "Second cohort USA"
   },
   {
     "id": 3,
-    "title": "2015",
-    "text": "Develop grant for training 30 women in Programming Languages"
+    "title": "2016",
+    "text": "Third cohort USA"
   },
   {
     "id": 4,
-    "title": "2016",
-    "text": "Develop grant for Virtual Academy"
+    "title": "2017",
+    "text": "Fourth cohort USA"
   },
   {
     "id": 5,
-    "title": "2017",
-    "text": "Accepted in GIZ's Managers Program"
-  },
-  {
-    "id": 6,
     "title": "2018",
-    "text": "1st Ally Germany"
+    "text": "First cohort Germany, 5th cohort USA"
   }
 ]

@@ -68,12 +68,11 @@ const DesktopMenuStyles = OuterStyledSection.extend`
 
     &__logo {
       position: absolute;
-      border: 1px solid red;
       top: 10px;
       left: 10px;
-      width: 205px;
+      width: 185px;
       height: 80px;
-      background-image: url('/images/logo--int2.png');
+      background-image: url('/images/logo--int2--tablet.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }

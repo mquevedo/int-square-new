@@ -16,7 +16,7 @@ export const Partners = () => {
           </div>
           <div className='partners__data__ibes'>
             <div className='partners__data__ibes--logo'>
-              <p> GERMANY </p>
+              <p> CHEMNITZ, GERMANY </p>
             </div>
           </div>
         </div>
@@ -142,13 +142,15 @@ const PartnersSectionStyled = styled.div`
                         p {
                             font-family: ${({theme}) => theme.baseFont};
                             margin: 0;
+                            width: 200%;
+                            text-align: left;
                             margin-bottom: 56%;
                             color: white;
                         }
 
                         @media (min-width: ${({ theme }) => theme.medium.start}) {
                             p {
-                                margin-bottom: 105%;
+                                margin-bottom: 80%;
                                 font-size: 35px;
                             }
                         } 
@@ -162,8 +164,8 @@ const PartnersSectionStyled = styled.div`
 
                         @media (min-width: ${({ theme }) => theme.large.start}) {
                             p {
-                                font-size: 60px;
-                                margin-bottom: 35%;
+                                font-size: 50px;
+                                margin-bottom: 36%;
                                 
                             }
                         } 

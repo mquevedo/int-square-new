@@ -25,7 +25,7 @@ export class Slide extends Component {
 
 const SlideStyles = styled.div`
   .alumni-slide {
-    height: 90vh;
+    height: 60vh;
     text-align: center;
     color: white;
     background: url(${({pics}) => pics.circle}), #013B6D;
@@ -114,7 +114,7 @@ const SlideStyles = styled.div`
       }
 
       &__bio {
-        margin-top: 90px;
+        margin-top: 30%;
         padding-left: 15px;
         @media(min-width: 500px) {
           margin-top: 25px;
@@ -126,7 +126,12 @@ const SlideStyles = styled.div`
         span {
           font-weight: bold;
         }
-        @media(min-width: ${({theme}) => theme.medium.start}) {
+        @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: landscape){
+          margin-bottom: 10px;
+          margin-top: 10px;
+          font-size: 0.7em;
+        }
+        @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: portrait){
           margin-bottom: 20px;
           margin-top: 25px;
           font-size: 1em;

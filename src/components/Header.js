@@ -1,34 +1,26 @@
-// @flow
-import React from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react'
+import OuterStyledSection from './StyledSlatOuter'
+// import InnerStyledSection from './StyledSlatInner'
+import { Menu, MobileMenu } from './'
+import { TabletMenu } from './TabletMenu';
 
-import StyledSlatOuter from './StyledSlatOuter'
-import StyledSlatInner from './StyledSlatInner'
+export class Header extends Component {
 
-export const Header = () => {
-  return (
-    <HeaderStyles>
-      <StyledSlatOuter className='header__outer'>
-        <StyledSlatInner className='header__inner'>
-        </StyledSlatInner>
-      </StyledSlatOuter>
-    </HeaderStyles>
-  )
+  render() {
+    return (
+      <HeaderStyles>
+        <header className="header">
+          <Menu />
+          <TabletMenu />
+          <MobileMenu />
+        </header>
+      </HeaderStyles>
+    )
+  }
 }
 
-const HeaderStyles = styled.div`
-  .header {
-    &__outer {
-      max-width: 100%;
-    }
-    &__inner {
-      width: 100%;
-      height: 420px;
-      max-width: 100%;
-      background-image: url(/images/header.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+const HeaderStyles = OuterStyledSection.extend`
+  background-color: ${({ theme }) => theme.transparent};
+  ${'' /* height: 80px; */}
   }
 `

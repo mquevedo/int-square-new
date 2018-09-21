@@ -3,8 +3,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {
-  Header,
-  Timeline,
+  HomePageHeader,
+  TimeLine,
   Alumni,
   Current,
   Life,
@@ -18,8 +18,8 @@ import {
 export const HomePage = () => {
   return (
     <HomePageStyles>
-      <Header />
-      <Timeline/>
+      <HomePageHeader />
+      <TimeLine/>
       <Alumni/>  
       <Current/>
       <Life/>

@@ -88,7 +88,7 @@ const SlideStyles = styled.div`
         }
 
         @media(min-width: ${({theme}) => theme.large.start}) {
-         margin-top: 5vh;
+         margin-top: 2vh;
         }
       }
 
@@ -123,6 +123,7 @@ const SlideStyles = styled.div`
       &__bio {
         margin-top: 15vh;
         padding-left: 15px;
+        padding-right: 15px;
         @media(max-width: ${({theme}) => theme.small.end}) and (orientation: landscape) {
           margin-top: 2vh;
         }
@@ -149,7 +150,7 @@ const SlideStyles = styled.div`
           font-size: 1em;
         }
         @media(min-width: ${({theme}) => theme.large.start}) {
-          font-size: 1.25em;
+          font-size: 1em;
           margin-bottom: 20px;
         }
       }

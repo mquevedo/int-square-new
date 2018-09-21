@@ -35,13 +35,23 @@ const SlideStyles = styled.div`
     position:relative;
     overflow: hidden;
     font-family: ${({theme}) => theme.baseFont};
-    @media(min-width: ${({theme}) => theme.medium.start}) {
-      height: 48vh;
+
+    @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: landscape){
+      height: 85vh;
       background: url(${({pics}) => pics.large}), #013B6D;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right center,left center;
     }
+
+    @media(min-width: ${({theme}) => theme.medium.start}) and (orientation: portrait){
+      height: 50vh;
+      background: url(${({pics}) => pics.large}), #013B6D;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center,left center;
+    }
+
     @media(min-width: ${({theme}) => theme.large.start}) {
       height: 82vh;
     }

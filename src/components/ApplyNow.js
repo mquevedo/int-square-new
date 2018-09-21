@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from '../lib/appConstants'
 
 export const ApplyNow = () => {
   return (
-    <ReqsSectionsStyles className='req'>
+    <ReqsSectionsStyles id="apply-now" className='req'>
       <OuterStyledSection className='req__outer'>
         <InnerStyledSection className='req__inner'>
           <div className='req__apply'>

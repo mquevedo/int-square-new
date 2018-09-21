@@ -9,7 +9,7 @@ import { CONTACT_URLS } from '../lib/appConstants'
 export const Footer = () => {
   return (
     <FooterStyles>
-      <StyledSlatOuter className='footer__contact__outer'>
+      <StyledSlatOuter id="contact-us" className='footer__contact__outer'>
         <StyledSlatInner className='footer__contact__inner'>
           <h2 className='footer__contact__title'>contact us:</h2>
 

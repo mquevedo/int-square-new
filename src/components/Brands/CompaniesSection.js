@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from '../../lib/appConstants'
 export const CompaniesSection = () => {
   return (
     <CompaniesSectionStyles>
-      <StyledSlatOuter className='companies__outer'>
+      <StyledSlatOuter id="brands" className='companies__outer'>
         <StyledSlatInner className='companies__inner'>
           <a
             className='companies__logo companies__logo--korinver'

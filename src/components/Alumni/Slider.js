@@ -19,9 +19,11 @@ export class AlumniSlider extends Component {
       autoplaySpeed: 6000,
     }
     return (
-      <Slider {...settings}>
-        {data.map((alumni,index) =><Slide key={index} data={alumni}/>)}
-      </Slider>
+      <div id="alumni">
+        <Slider {...settings}>
+          {data.map((alumni,index) =><Slide key={index} data={alumni}/>)}
+        </Slider>
+      </div>
     )
   }
 }

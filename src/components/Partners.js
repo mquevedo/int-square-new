@@ -6,7 +6,7 @@ import OuterStyledSection from './StyledSlatOuter'
 export const Partners = () => {
   return (
     <PartnersSectionStyled>
-      <OuterStyledSection className='partners__outer'>
+      <OuterStyledSection id="partners" className='partners__outer'>
         <div className='partners__data'>
           <p> OUR PARTNERS </p>
           <div className='partners__data__gen-ui'>

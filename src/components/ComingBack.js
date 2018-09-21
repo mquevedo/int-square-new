@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const ComingBack = () => {
   return (
     <ComingBackStyles>
-      <div className="coming-back">
+      <div id="coming-back" className="coming-back">
         <div className="coming-back__header">
           <h1 className="coming-back__header__title">COMING BACK</h1>
           <p className="coming-back__header__text">

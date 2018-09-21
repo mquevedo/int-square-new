@@ -43,7 +43,7 @@ export const ApplyNow = () => {
             <div className='req__data__skills'>
               <div className='req__data__logos req__data__logos--sr-dev'></div>
               <div className='req__data__dev'>
-                <p className='req__data--junior-title'>For Senior Inter:</p>
+                <p className='req__data--junior-title'>For Senior Intern:</p>
                 <ul>
                   <li>
                         Currently enrolled in a Master's Program in Computer Sciences

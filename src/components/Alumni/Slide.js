@@ -36,15 +36,14 @@ const SlideStyles = styled.div`
     overflow: hidden;
     font-family: ${({theme}) => theme.baseFont};
     @media(min-width: ${({theme}) => theme.medium.start}) {
-      height: 70vh;
+      height: 48vh;
       background: url(${({pics}) => pics.large}), #013B6D;
       background-repeat: no-repeat;
-      background-size: 50% 100%;
+      background-size: contain;
       background-position: right center,left center;
     }
     @media(min-width: ${({theme}) => theme.large.start}) {
-      height: 90vh;
-      background-size: 60% 100%;
+      height: 82vh;
     }
 
     &__bg {

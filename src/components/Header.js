@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import OuterStyledSection from './StyledSlatOuter'
 // import InnerStyledSection from './StyledSlatInner'
 import { Menu, MobileMenu } from './'
+import { TabletMenu } from './TabletMenu';
 
 export class Header extends Component {
 
@@ -10,6 +11,7 @@ export class Header extends Component {
       <HeaderStyles>
         <header className="header">
           <Menu />
+          <TabletMenu />
           <MobileMenu />
         </header>
       </HeaderStyles>

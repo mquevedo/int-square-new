@@ -1,34 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Home"
+    "title": "Home",
+    "slug": ""
   },
   {
     "id": 2,
-    "title": "Our Story"
+    "title": "Our Story",
+    "slug": ""
   },
   {
     "id": 3,
-    "title": "Alumni"
+    "title": "Alumni",
+    "slug": ""
   },
   {
     "id": 4,
-    "title": "Current Int2"
+    "title": "Current Int2",
+    "slug": ""
   },
   {
     "id": 5,
-    "title": "Life"
+    "title": "Life",
+    "slug": ""
   },
   {
     "id": 6,
-    "title": "Partners"
+    "title": "Partners",
+    "slug": "#partners"
   },
   {
     "id": 7,
-    "title": "Coming Back"
+    "title": "Coming Back",
+    "slug": ""
   },
   {
     "id": 8,
-    "title": "Apply"
+    "title": "Apply",
+    "slug": ""
   }
 ]

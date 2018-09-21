@@ -39,7 +39,7 @@ const MobileMenuStyles = StyledSlatOuter.extend`
   margin: 0px;
   height: 80px;
   background-color: ${({ theme }) => theme.blue};
-  @media (min-width: ${({ theme }) => theme.large.start}) {
+  @media (min-width: ${({ theme }) => theme.medium.end}) {
     display: none;
   }
 

@@ -2,30 +2,26 @@ import React, { Component } from 'react'
 import InnerStyledSection from './StyledSlatInner'
 import OuterStyledSection from './StyledSlatOuter'
 
+
 export class HomePageHeader extends Component {
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 200,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-    };
     return (
       <HomePageHeaderStyles className='home-page-header__outer'>
         <InnerStyledSection className='home-page-header__inner'>
-          <div className='home-page-header__image'>
-            <div className='carousel'>
-              <div className='carousel__item'>
-                <div className='carousel__container'>
-                  <div className='carousel__item__logo' />
-                  <div className='carousel__item__text'>
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                  </div>
-                  <div className='carousel__item__button'>
-                    <button>¿How to apply?</button>
-                  </div>
+          <div className='home-page-header__image' />
+          <div className='carousel'>
+            <div className='carousel__item'>
+              <div className='carousel__container'>
+                <div className='carousel__item__logo' />
+                <div className='carousel__item__text'>
+                  The Int2 project focuses on sending young professionals from El Salvador to companies abroad, in order to rapidly develop their skills, creating a pool of world class software developers and innovation leaders available for future allied projects.
+                </div>
+                <div className='carousel__item__button'>
+                  <a
+                    href='#apply'
+                  >
+                    ¿How to apply?
+                  </a>
                 </div>
               </div>
             </div>
@@ -76,7 +72,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         ${'' /* margin: -80px 0 0 0; */}
       }
       @media(max-width: ${({ theme }) => theme.small.end}) {
-
+        height: 500px;
       }
     }
   }
@@ -84,7 +80,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
 
     &__item {
       width: 80%;
-      margin: 80px 10%;
+      margin: 0px 10%;
       float: right;
 
       &__logo {
@@ -103,17 +99,20 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         clear: both;
         text-align: justify;
         font-weight: 600;
+        font-size: 1.2em;
       }
 
       &__button {
         width: 370px;
+        height: auto;
         margin: 50px 0 0 0;
         float: right;
-
-        button {
+        a {
+          text-decoration: none;
+          padding: 25px 80px;
           border-radius: 5px;
-          width: 90%;
-          height: 85px;
+          ${'' /* width: 90%; */}
+          ${'' /* height: 85px; */}
           border: 3px solid white;
           background-color: transparent;
           color: white;
@@ -123,7 +122,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         }
       }
       @media(max-width: ${({ theme }) => theme.small.end}) {
-          margin: 70px 10%;
+          margin: 10px 10%;
 
           &__logo {
           width: 100%;
@@ -132,11 +131,14 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
 
         &__text {
           width: 100%;
-          font-size: 0.85em;
+          font-size: 1em;
         }
         &__button {
           width: 100%;
-          margin: 20px 0 0 0;
+          ${'' /* margin: 20px 0 0 0; */}
+          a {
+            padding: 25px 20px;
+          }
         }
       }
     }
@@ -148,25 +150,5 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
           width: 100%;
         }
       }
-
-  .slick-slide {
-    height: 450px !important;
-    flex-flow: column;
-    align-items: right;
-  }
-
-  .slick-arrow {
-    display: none !important;
-  }
-
-  .slick-dots li {
-    margin: 0 20px;
-    button {
-    &::before {
-      color: white;
-      font-size: 14px;
-      }
-    }
-  }
 }
 `

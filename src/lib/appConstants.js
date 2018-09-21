@@ -13,5 +13,5 @@ export const EXTERNAL_LINKS = {
   KORINVER: 'http://www.korinver.com',
   US_EMBASSY: 'https://sv.usembassy.gov/es/',
   ED_USA: 'https://educationusa.state.gov/',
-  
+  APPLY_NOW: 'https://drive.google.com/file/d/0B_6P3deselE7THl0cXZQUVpIWTQ/view',
 }

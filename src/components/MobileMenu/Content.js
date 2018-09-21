@@ -17,8 +17,8 @@ export class Content extends Component {
               <a
                 key={section.id}
                 className='mobile-menu__option'
-                // href={`${section.slug}`}
-                // target={section.slug.startsWith('#') ? '_self' : '_blank'}
+                href={`${section.slug}`}
+                target={section.slug.startsWith('#') ? '_self' : '_blank'}
                 onClick={handleOnClick}
               >
                 {section.title}
@@ -56,7 +56,8 @@ const MobileMenuStyles = StyledSlatOuter.extend`
       padding-left: 30px;
       color: ${({ theme }) => theme.blue};
       font-weight: 600;
-      ${'' /* cursor: pointer; */}
+      cursor: pointer;
+      text-decoration: none;
     }
   }
 

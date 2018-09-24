@@ -6,7 +6,7 @@ import {
   HomePageHeader,
   TimeLine,
   Alumni,
-  Current,
+  CurrentInterns,
   Life,
   Partners,
   ComingBack,
@@ -21,7 +21,7 @@ export const HomePage = () => {
       <HomePageHeader />
       <TimeLine/>
       <Alumni/>  
-      <Current/>
+      <CurrentInterns/>
       <Life/>
       <Partners/>
       <ComingBack/>

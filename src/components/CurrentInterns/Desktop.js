@@ -125,7 +125,6 @@ const MapStyles = StyledSlatOuter.extend`
         width: 94%;
         height: 94%;
         border-radius: 50%;
-        ${'' /* border: 1px solid red; */}
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('/images/header.png')
@@ -158,7 +157,6 @@ const MapStyles = StyledSlatOuter.extend`
     &__bgImage {
       margin: 0 auto;
       margin-top: 450px;
-      border: 1px solid red;
       width: 500px;
       background-image: url('/images/mapa.png');
       background-repeat: no-repeat;
@@ -284,7 +282,6 @@ const MapStyles = StyledSlatOuter.extend`
       &__bgImage {
         height: 300px;
         width: 500px;
-        border: 1px solid yellow;
       }
       &__seattle {
         &__first {
@@ -367,7 +364,6 @@ const MapStyles = StyledSlatOuter.extend`
       &__bgImage {
         height: 400px;
         width: 700px;
-        border: none;
       }
       &__seattle {
         &__first {

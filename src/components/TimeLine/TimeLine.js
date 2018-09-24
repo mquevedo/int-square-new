@@ -16,9 +16,10 @@ export class TimeLine extends Component {
         <Title>
           <h2
             style={{
-              fontSize: '1.5em'
+              margin: 0,
+              fontSize: '1em'
             }}
-          > “Acceptance rate for this program is 5%”</h2>
+          > Acceptance rate for this program is 5%</h2>
         </Title>
       </TimeLineStyles>
     )

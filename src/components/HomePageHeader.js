@@ -97,7 +97,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         width: 370px;
         float: right;
         clear: both;
-        text-align: justify;
+        text-align: left;
         font-weight: 600;
         font-size: 1.05em;
       }

@@ -17,22 +17,22 @@ export class Mobile extends Component {
           </h2>
           <div className='current-interns__content'>
             <InternLeft
-              bgImage='header.png'
+              bgImage='avatar--eduardo.png'
               title='Eduardo Chávez'
               text='Seattle, WA'
             />
             <InternRight
-              bgImage='header.png'
+              bgImage='avatar--josue.png'
               title='Josué Morales'
               text='Seattle, WA'
             />
             <InternLeft
-              bgImage='header.png'
+              bgImage='avatar--victor.png'
               title='Victor Flamenco'
               text='Chemnitz, Germany'
             />
             <InternRight
-              bgImage='header.png'
+              bgImage='avatar--jose.png'
               title='José Maza'
               text='Chemnitz, Germany'
             />

@@ -22,7 +22,7 @@ export class Desktop extends Component {
                 <div className='current-interns__seattle__first__vertical-line' />
                 <div className='current-interns__seattle__first__avatar avatar'>
                   <div className='avatar__container'>
-                    <div className='avatar__container__bgImage' />
+                    <div className='avatar__container__bgImage bgImage' />
                   </div>
                   <p className='avatar__title'>
                     Eduardo Chávez
@@ -39,7 +39,7 @@ export class Desktop extends Component {
                 <div className='current-interns__seattle__second__vertical-line' />
                 <div className='current-interns__seattle__second__avatar avatar'>
                   <div className='avatar__container'>
-                    <div className='avatar__container__bgImage' />
+                    <div className='avatar__container__bgImage bgImage' />
                   </div>
                   <p className='avatar__title'>
                     Josué Morales
@@ -59,7 +59,7 @@ export class Desktop extends Component {
                 </div>
                 <div className='current-interns__germany__first__avatar avatar'>
                   <div className='avatar__container'>
-                    <div className='avatar__container__bgImage' />
+                    <div className='avatar__container__bgImage bgImage' />
                   </div>
                   <p className='avatar__title'>
                     Victor Flamenco
@@ -75,7 +75,7 @@ export class Desktop extends Component {
                 </div>
                 <div className='current-interns__germany__second__avatar avatar'>
                   <div className='avatar__container'>
-                    <div className='avatar__container__bgImage' />
+                    <div className='avatar__container__bgImage bgImage' />
                   </div>
                   <p className='avatar__title'>
                     José Maza
@@ -127,7 +127,6 @@ const MapStyles = StyledSlatOuter.extend`
         border-radius: 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('/images/header.png')
       }
     }
     p {
@@ -168,6 +167,9 @@ const MapStyles = StyledSlatOuter.extend`
       &__first {
         &__avatar {
           margin: -300px 0 0 -170px;
+          .bgImage {
+            background-image: url('/images/avatar--eduardo.png') !important;
+          }
         }
         &__horizontal-line {
           position: absolute;
@@ -196,6 +198,9 @@ const MapStyles = StyledSlatOuter.extend`
       &__second {
         &__avatar {
           margin: -185px 0 0 20px;
+          .bgImage {
+            background-image: url('/images/avatar--josue.png') !important;
+          }
         }
         &__horizontal-line {
           position: absolute;
@@ -227,6 +232,9 @@ const MapStyles = StyledSlatOuter.extend`
       &__first {
         &__avatar {
           margin: -390px 0 0 240px;
+          .bgImage {
+            background-image: url('/images/avatar--victor.png') !important;
+          }
         }
         &__horizontal-line {
           position: absolute;
@@ -255,6 +263,9 @@ const MapStyles = StyledSlatOuter.extend`
         position: absolute;
         &__avatar {
           margin: -130px 0 0 525px;
+          .bgImage {
+            background-image: url('/images/avatar--jose.png') !important;
+          }
         }
         &__vertical-line {
           position: absolute;

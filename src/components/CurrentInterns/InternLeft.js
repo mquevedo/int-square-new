@@ -37,7 +37,7 @@ const Container = styled.div`
       margin-top: -10px;
       background-image: ${(props) => `url(/images/${props.bgImage})`};
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     &__content {
       p {

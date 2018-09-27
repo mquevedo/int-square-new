@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import StyledSlatOuter from '../StyledSlatOuter'
 import StyledSlatInner from '../StyledSlatInner'
-import { InternLeft } from './InternLeft';
-import { InternRight } from './InternRight';
+import { InternLeft } from './InternLeft'
+import { InternRight } from './InternRight'
 
 export class Mobile extends Component {
   render() {
     return (
-      <MapStyles className='current-interns'>
+      <MapStyles className='current-interns' id='currentint2'>
         <StyledSlatInner className='current-interns__inner'>
           <h2 className='current-interns__title'>
             OUR CURRENT

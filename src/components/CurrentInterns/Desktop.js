@@ -5,7 +5,7 @@ import StyledSlatInner from '../StyledSlatInner'
 export class Desktop extends Component {
   render() {
     return (
-      <MapStyles className='current-interns'>
+      <MapStyles className='current-interns' id='currentint2'>
         <StyledSlatInner className='current-interns__inner'>
           <h2 className='current-interns__title'>
             OUR CURRENT

@@ -15,6 +15,11 @@
     "slug": "#alumni"
   },
   {
+    "id": 3,
+    "title": "Current Int2",
+    "slug": "#currentint2"
+  },
+  {
     "id": 5,
     "title": "Life",
     "slug": "#lifeasint"

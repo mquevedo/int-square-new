@@ -29,13 +29,6 @@ export class EventsMobile extends Component {
   }
 }
 
-const Line = styled.div`
-  border: 1px solid ${({ theme }) => theme.blue};
-  width: 2%;
-  height: 100%;
-  position: absolute;
-`
-
 const Container = styled.div`
   ${'' /* position: absolute; */}
   ${'' /* border: 1px solid black; */}

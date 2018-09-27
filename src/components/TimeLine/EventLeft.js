@@ -86,16 +86,6 @@ const Event = styled.div`
   align-items: center;
 `
 
-const Container = styled.div`
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const CirclePoint = styled.div`
   position: absolute;
   box-sizing: border-box;

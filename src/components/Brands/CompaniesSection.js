@@ -15,7 +15,7 @@ export const CompaniesSection = () => {
             href={EXTERNAL_LINKS.KORINVER}
             target='_blank'
             rel='noopener noreferrer'
-          ></a>
+          />
           <a
             className='companies__logo companies__logo--gen-ui'
             href={EXTERNAL_LINKS.GEN_UI}

@@ -65,23 +65,6 @@ const Event = styled.div`
   justify-content: center;
   align-items: center;
 `
-
-const Line = styled.div`
-  border: 1px solid ${({ theme }) => theme.blue};
-  width: 80%;
-  position: absolute;
-`
-
-const Container = styled.div`
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const CirclePoint = styled.div`
   position: absolute;
   box-sizing: border-box;

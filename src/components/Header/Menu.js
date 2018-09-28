@@ -4,19 +4,8 @@ import OuterStyledSection from '../StyledSlatOuter'
 import InnerStyledSection from '../StyledSlatInner'
 import MenuList from '../../lib/data'
 
-type Props = {}
-
-type State = {
-  mobileMenuShown: boolean,
-}
-
-export class Menu extends Component<Props, State> {
-  state = {
-    mobileMenuShown: false,
-  }
-
+export class Menu extends Component {
   render() {
-    const { mobileMenuShown } = this.state;
     return (
       <div>
         <DesktopMenuStyles className='desktop-menu__outer'>

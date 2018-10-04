@@ -11,7 +11,7 @@ const data = [
       {year:'2014/2015',text: 'Selected for the Int2 program , René joined GenUI´s team in Seattle.'},
       {year:'2014/2015',text: 'René presented the first iteration of his Startup “Samaritan” during a hackathon.'},
       {year:'2016',text: 'Obtained his Computer Science Engineering diploma.'},
-      {year:'2017/2018',text: 'Based in El Salvador, René is currently working in Samaritan.'}
+      {year:'2017/2018',text: 'Based in El Salvador, René is working at Samaritan as the Chief Technology Officer.'}
     ], 
   },
   {

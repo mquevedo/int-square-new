@@ -13,11 +13,13 @@ export class Events extends Component {
             return (index % 2) === 0
               ?
               <EventUp
+                key={index}
                 title={section.title}
                 text={section.text}
               />
               :
               <EventDown
+                key={index}
                 title={section.title}
                 text={section.text}
               />

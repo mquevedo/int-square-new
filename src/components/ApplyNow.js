@@ -86,7 +86,7 @@ const ReqsSectionsStyles = styled.div`
       background-size: cover;
       background-position: bottom;
       background-repeat: no-repeat;
-      background-image: url('https://int2.blob.core.windows.net/public/applynowsection/applynow-fondo.png');
+      background-image: url('images/apply-now.png');
       @media (min-width: ${({ theme }) => theme.large.start}) {
           height: 70%; 
       }
@@ -222,22 +222,22 @@ const ReqsSectionsStyles = styled.div`
           }
 
           &--gral-req {
-              background-image: url('https://int2.blob.core.windows.net/public/svg/Gral Requirements.svg');
+              background-image: url('images/GralRequirements.svg');
               flex: 1;
           }
 
           &--jr-dev {
-            background-image: url('https://int2.blob.core.windows.net/public/svg/Jr Dev.svg');
+            background-image: url('images/JrDev.svg');
             flex: 1;
           }
 
           &--sr-dev {
-            background-image: url('https://int2.blob.core.windows.net/public/svg/Sr Dev.svg');
+            background-image: url('images/SrDev.svg');
             flex: 1;
           }
 
           &--other-skills {
-            background-image: url('https://int2.blob.core.windows.net/public/svg/Other Skills.svg');
+            background-image: url('images/OtherSkills.svg');
             flex: 1;
           }
 

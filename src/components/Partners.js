@@ -69,7 +69,7 @@ const PartnersSectionStyled = styled.div`
 
               &__gen-ui {
                   height: 300px;
-                  background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-gen-ui.png');
+                  background-image: url('images/partners-gen-ui.jpg');
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;     
@@ -78,7 +78,7 @@ const PartnersSectionStyled = styled.div`
                         display: flex;
                         flex-direction: column-reverse;
                         justify-content: center;
-                        background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-gen-ui-logo.png');
+                        background-image: url('images/partners-gen-ui-logo.png');
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;      
@@ -122,7 +122,7 @@ const PartnersSectionStyled = styled.div`
               &__ibes {
                   width: 300px;
                   height: 300px;
-                  background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-ibes.jpg');
+                  background-image: url('images/partners-ibes.jpg');
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;      
@@ -132,7 +132,7 @@ const PartnersSectionStyled = styled.div`
                         display: flex;
                         flex-direction: column-reverse;
                         flex-wrap: wrap;
-                        background-image: url('https://int2.blob.core.windows.net/public/partnersection/partners-ibes-logo.png');
+                        background-image: url('images/partners-ibes-logo.png');
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center;      

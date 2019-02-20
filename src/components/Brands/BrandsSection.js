@@ -89,17 +89,17 @@ const BrandsSectionStyle = styled.div`
       }
       
       &--us-embassy {
-        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-us-embassy.png);
+        background-image: url(images/logo--embassy.png);
         background-position: left;
       }
 
       &--ed-usa {
-        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-edusa.png);
+        background-image: url(images/logo--education-usa.png);
         background-position: left center;
       }
 
       &--probesa {
-        background-image: url(https://int2.blob.core.windows.net/public/brandsection/brands-probesa.png);
+        background-image: url(images/logo--probesa.png);
         margin: auto;
         @media(min-width: ${({theme}) => theme.medium.start}) {
           margin: 0;

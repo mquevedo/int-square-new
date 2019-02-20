@@ -14,11 +14,13 @@ export class EventsMobile extends Component {
             return (index % 2) === 0
               ?
               <EventRight
+                key={index}
                 title={section.title}
                 text={section.text}
               />
               :
               <EventLeft
+                key={index}
                 title={section.title}
                 text={section.text}
               />

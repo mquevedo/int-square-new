@@ -13,7 +13,7 @@ export const ComingBack = () => {
         </div>
         <div className="coming-back__items row justify-content-center">
           <div className="coming-back__item col-sm-12 col-lg-4">
-            <img className="coming-back__item__image coming-back__item__image--right" src="https://int2.blob.core.windows.net/public/svg/comingback-korinver.svg" alt="korinver"/>
+            <img className="coming-back__item__image coming-back__item__image--right" src="images/comingback-korinver.svg" alt="korinver"/>
             <h2 className="coming-back__item__title">Work with Korinver</h2>
             <p className="coming-back__item__text">
               Every participant returns with a contract for 2 years. 
@@ -22,7 +22,7 @@ export const ComingBack = () => {
             </p>
           </div>
           <div className="coming-back__item col-sm-12 col-lg-4">
-            <img className="coming-back__item__image" src="https://int2.blob.core.windows.net/public/svg/comingback-work.svg" alt="workremotely"/>
+            <img className="coming-back__item__image" src="images/comingback-work.svg" alt="workremotely"/>
             <h2 className="coming-back__item__title">Work internationally </h2>
             <p className="coming-back__item__text">
               The establishment of long term alliances with our partners allow us to keep 
@@ -30,7 +30,7 @@ export const ComingBack = () => {
             </p>
           </div>
           <div className="coming-back__item col-sm-12 col-lg-4">
-            <img className="coming-back__item__image" src="https://int2.blob.core.windows.net/public/svg/comingback-startup.svg" alt="startup"/>
+            <img className="coming-back__item__image" src="images/comingback-startup.svg" alt="startup"/>
             <h2 className="coming-back__item__title">Create your own start up</h2>
             <p className="coming-back__item__text">
               With the experience obtained by the participants and the exposure to new technologies 

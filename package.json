@@ -23,7 +23,7 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^5.5.0",
+    "eslint": "^5.15.0",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.80.0"
   }

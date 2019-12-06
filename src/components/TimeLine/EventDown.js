@@ -26,15 +26,13 @@ export class EventDown extends Component {
 }
 
 const Content = styled.div`
-  ${'' /* position: absolute; */}
   overflow: hidden;
   padding: 5px;
   margin: 0 5px 0 5px;
   padding-top: 300px;
   max-width: 100%;
-  min-width: 100px;
+  min-width: 150px;
   border-bottom: 2px solid ${({ theme }) => theme.blue};
-  ${'' /* border: 1px solid red; */}
 `
 
 const Title = styled.div`
@@ -58,7 +56,6 @@ const ArrowDown = styled.div`
 `
 
 const Event = styled.div`
-  ${'' /* border: 1px solid red; */}
   height: 100%;
   max-width: 50%;
   display: flex;
@@ -68,7 +65,6 @@ const Event = styled.div`
 const CirclePoint = styled.div`
   position: absolute;
   box-sizing: border-box;
-  ${'' /* margin: 380% 0 0 0; */}
   width: 70px;
   height: 70px;
   border-radius: 50%;

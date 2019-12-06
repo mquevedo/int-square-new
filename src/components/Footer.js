@@ -28,8 +28,8 @@ export const Footer = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Bulevar Santa Elena,<br />
-                  Antiguo Cuscatlán, <br />
+                  Zona Franca,<br />
+                  Santa Tecla Local 2B2, <br />
                   La Libertad, El Salvador
                 </a>
               </span>

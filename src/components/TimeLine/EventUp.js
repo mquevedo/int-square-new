@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export class EventUp extends Component {
   render() {
-    const { text, title  } = this.props;
+    const { text, title  } = this.props
     return (
       <Event>
         <Content>
@@ -26,7 +26,6 @@ export class EventUp extends Component {
 }
 
 const Content = styled.div`
-  ${'' /* position: absolute; */}
   overflow: hidden;
   padding: 5px;
   margin: 0 5px 0 5px;
@@ -34,7 +33,6 @@ const Content = styled.div`
   max-width: 200px;
   width: 200px;
   border-top: 2px solid ${({ theme }) => theme.blue};
-  ${'' /* border: 1px solid red; */}
 `
 
 const Title = styled.div`
@@ -57,7 +55,6 @@ const ArrowUp = styled.div`
 `
 
 const Event = styled.div`
-  ${'' /* border: 1px solid red; */}
   height: 100%;
   max-width: 50%;
   display: flex;
@@ -68,7 +65,6 @@ const Event = styled.div`
 const CirclePoint = styled.div`
   position: absolute;
   box-sizing: border-box;
-  ${'' /* margin: 380% 0 0 0; */}
   width: 70px;
   height: 70px;
   border-radius: 50%;

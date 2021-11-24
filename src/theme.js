@@ -1,19 +1,19 @@
 let theme = {
 
-  blue:                     '#003464',
-  green:                    '#00d028',
+  blue: '#003464',
+  green: '#00d028',
 
 
-  textPrimary:              '#232931',
+  textPrimary: '#232931',
 
-  transparent:              'transparent',
-  black:                    '#000000',
-  white:                    '#ffffff',
+  transparent: 'transparent',
+  black: '#000000',
+  white: '#ffffff',
 
-  bgGray:                   '#fafafa',
-  bgBlue:                   '#EBEEF0',
+  bgGray: '#fafafa',
+  bgBlue: '#EBEEF0',
 
-  boxShadow:                'rgba(32,32,32,0.05) 0px 0px 30px 0px',
+  boxShadow: 'rgba(32,32,32,0.05) 0px 0px 30px 0px',
 
   baseFont: '"Montserrat", sans-serif',
   secondaryFont: '"Montserrat Alternates", sans-serif',

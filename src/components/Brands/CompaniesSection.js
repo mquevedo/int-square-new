@@ -61,18 +61,18 @@ const CompaniesSectionStyles = styled.div`
       }
 
       &--korinver {
-        background-image: url(images/logo--korinver.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--korinver.png);
       }
 
       &--gen-ui {
-        background-image: url(images/logo--gen-ui.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--gen-ui.png);
         @media(min-width: ${({theme}) => theme.medium.start}) {
           background-position: right;
         }
       }
 
       &--ibes {
-        background-image: url(images/logo--ibes.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--ibes.png);
         background-position: center;
         margin: auto;
         @media(min-width: ${({theme}) => theme.medium.start}) {

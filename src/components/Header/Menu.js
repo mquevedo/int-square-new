@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
+import styled from 'styled-components'
 import OuterStyledSection from '../StyledSlatOuter'
 import InnerStyledSection from '../StyledSlatInner'
 import MenuList from '../../lib/data'
@@ -31,7 +32,7 @@ export class Menu extends Component {
   }
 }
 
-const DesktopMenuStyles = OuterStyledSection.extend`
+const DesktopMenuStyles = styled(OuterStyledSection)`
   padding: 0;
   display: none;
   @media(min-width: ${({ theme }) => theme.large.start}) {

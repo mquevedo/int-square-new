@@ -49,7 +49,7 @@ const Title = styled.div`
   }
 `
 
-const TimeLineStyles = OuterStyledSection.extend`
+const TimeLineStyles = styled(OuterStyledSection)`
   height: 600px;
   padding-bottom: 50px;
   @media(max-width: ${({ theme }) => theme.medium.end}) {

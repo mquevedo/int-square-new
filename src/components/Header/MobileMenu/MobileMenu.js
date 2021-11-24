@@ -1,4 +1,5 @@
 import React, { Component} from 'react'
+import styled from 'styled-components';
 import StyledSlatOuter from '../../StyledSlatOuter'
 import StyledSlatInner from '../../StyledSlatInner'
 import { Content } from './Content'
@@ -49,7 +50,7 @@ export class MobileMenu extends Component {
 
 }
 
-const MobileMenuStyles = StyledSlatOuter.extend`
+const MobileMenuStyles = styled(StyledSlatOuter)`
   margin: 0px;
   height: 80px;
   background-color: ${({ theme }) => theme.blue};
@@ -70,7 +71,7 @@ const MobileMenuStyles = StyledSlatOuter.extend`
         margin: 0px 0 0 15px;
         width: 205px;
         height: 80px;
-        background-image: url('/images/logo--int2.png');
+        background-image: url('${process.env.PUBLIC_URL}/images/logo--int2.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }

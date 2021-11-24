@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import styled from 'styled-components'
 import StyledSlatInner from './StyledSlatInner';
 import StyledSlatOuter from './StyledSlatOuter';
 
@@ -24,7 +24,7 @@ export class Life extends Component {
   }
 }
 
-const LifeStyles = StyledSlatOuter.extend`
+const LifeStyles = styled(StyledSlatOuter)`
   height: 375px;
   margin: 0;
   box-shadow: ${({ theme }) => theme.boxShadow};
@@ -37,7 +37,7 @@ const LifeStyles = StyledSlatOuter.extend`
       max-width: 100%;
       width: 100%;
       height: 100%;
-      background-image: url(/images/life--as--int.jpg);
+      background-image: url(${process.env.PUBLIC_URL}/images/life--as--int.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;

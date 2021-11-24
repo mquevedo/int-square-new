@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
+import styled from 'styled-components'
 import OuterStyledSection from '../StyledSlatOuter'
 import InnerStyledSection from '../StyledSlatInner'
 import MenuList from '../../lib/data'
@@ -32,7 +33,7 @@ export class TabletMenu extends Component<Props, State> {
   }
 }
 
-const DesktopMenuStyles = OuterStyledSection.extend`
+const DesktopMenuStyles = styled(OuterStyledSection)`
   padding: 0;
   display: none;
   background-color: ${({ theme }) => theme.white};
@@ -61,7 +62,7 @@ const DesktopMenuStyles = OuterStyledSection.extend`
       left: 10px;
       width: 185px;
       height: 80px;
-      background-image: url('/images/logo--int2--tablet.png');
+      background-image: url('${process.env.PUBLIC_URL}/images/logo--int2--tablet.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import StyledSlatOuter from '../StyledSlatOuter'
 import StyledSlatInner from '../StyledSlatInner'
 
@@ -93,7 +94,7 @@ export class Desktop extends Component {
   }
 }
 
-const MapStyles = StyledSlatOuter.extend`
+const MapStyles = styled(StyledSlatOuter)`
   margin: 50px 0 0 0;
   height: 1100px;
   display: none;
@@ -157,7 +158,7 @@ const MapStyles = StyledSlatOuter.extend`
       margin: 0 auto;
       margin-top: 450px;
       width: 500px;
-      background-image: url('/images/mapa.png');
+      background-image: url('${process.env.PUBLIC_URL}/images/mapa.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       height: 250px;
@@ -168,7 +169,7 @@ const MapStyles = StyledSlatOuter.extend`
         &__avatar {
           margin: -300px 0 0 -170px;
           .bgImage {
-            background-image: url('/images/avatar--eduardo.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}/images/avatar--eduardo.png') !important;
           }
         }
         &__horizontal-line {
@@ -199,7 +200,7 @@ const MapStyles = StyledSlatOuter.extend`
         &__avatar {
           margin: -185px 0 0 20px;
           .bgImage {
-            background-image: url('/images/avatar--josue.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}//images/avatar--josue.png') !important;
           }
         }
         &__horizontal-line {
@@ -233,7 +234,7 @@ const MapStyles = StyledSlatOuter.extend`
         &__avatar {
           margin: -390px 0 0 240px;
           .bgImage {
-            background-image: url('/images/avatar--victor.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}//images/avatar--victor.png') !important;
           }
         }
         &__horizontal-line {
@@ -264,7 +265,7 @@ const MapStyles = StyledSlatOuter.extend`
         &__avatar {
           margin: -130px 0 0 525px;
           .bgImage {
-            background-image: url('/images/avatar--jose.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}//images/avatar--jose.png') !important;
           }
         }
         &__vertical-line {

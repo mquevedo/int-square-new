@@ -2,8 +2,8 @@ const data = [
   {
     name:'René García',
     pics: {
-      large: 'images/alumni/alumni-rene.jpg',
-      circle: 'images/alumni/alumni-rene-circle.png'
+      large: `${process.env.PUBLIC_URL}/images/alumni/alumni-rene.jpg`,
+      circle: `${process.env.PUBLIC_URL}/images/alumni/alumni-rene-circle.png`
     },
     year: '2014',
     bio: [
@@ -17,8 +17,8 @@ const data = [
   {
     name:'Juan Moreno',
     pics:{
-      large: 'images/alumni/alumni-juan.jpg',
-      circle: 'images/alumni/alumni-juan-circle.png'
+      large: `${process.env.PUBLIC_URL}/images/alumni/alumni-juan.jpg`,
+      circle: `${process.env.PUBLIC_URL}/images/alumni/alumni-juan-circle.png`
     },
     year: '2015',
     bio: [
@@ -30,8 +30,8 @@ const data = [
   {
     name:'Carlos Alvarado',
     pics:{
-      large: 'images/alumni/alumni-carlos.jpg',
-      circle: 'images/alumni/alumni-carlos-circle.png'
+      large: `${process.env.PUBLIC_URL}/images/alumni/alumni-carlos.jpg`,
+      circle: `${process.env.PUBLIC_URL}/images/alumni/alumni-carlos-circle.png`
     },
     year: '2016',
     bio: [
@@ -45,8 +45,8 @@ const data = [
   {
     name:'Scarlett Tejada',
     pics: {
-      large: 'images/alumni/alumni-scarlett.jpg',
-      circle: 'images/alumni/alumni-scarlett-circle.png'
+      large: `${process.env.PUBLIC_URL}/images/alumni/alumni-scarlett.jpg`,
+      circle: `${process.env.PUBLIC_URL}/images/alumni/alumni-scarlett-circle.png`
     },
     year: '2017',
     bio: [
@@ -59,8 +59,8 @@ const data = [
   {
     name:'Stanley Jovel',
     pics: {
-      large: 'images/alumni/alumni-stanley.jpg',
-      circle: 'images/alumni/alumni-stanley-circle.png'
+      large: `${process.env.PUBLIC_URL}/images/alumni/alumni-stanley.jpg`,
+      circle: `${process.env.PUBLIC_URL}/images/alumni/alumni-stanley-circle.png`
     },
     year: '2017',
     bio: [

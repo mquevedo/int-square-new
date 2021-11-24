@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import InnerStyledSection from './StyledSlatInner'
 import OuterStyledSection from './StyledSlatOuter'
 
@@ -32,7 +33,7 @@ export class HomePageHeader extends Component {
   }
 }
 
-const HomePageHeaderStyles = OuterStyledSection.extend`
+const HomePageHeaderStyles = styled(OuterStyledSection)`
   height: 500px;
   overflow: visible;
   ${'' /* margin: -80px 0 0 0; */}
@@ -60,7 +61,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
       top: 0;
       width: 100%;
       height: 440px;
-      background-image: url('/images/header.png');
+      background-image: url('${process.env.PUBLIC_URL}/images/header.png');
       background-repeat: no-repeat;
       background-size: cover;
       @media(min-width: ${({ theme }) => theme.medium.end}) {
@@ -87,7 +88,7 @@ const HomePageHeaderStyles = OuterStyledSection.extend`
         float: right;
         width: 370px;
         height: 150px;
-        background-image: url('/images/logo--int2.png');
+        background-image: url('${process.env.PUBLIC_URL}/images/logo--int2.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }

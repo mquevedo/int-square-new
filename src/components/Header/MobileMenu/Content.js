@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
 import _ from 'lodash/fp'
-
+import styled from 'styled-components';
 import StyledSlatOuter from '../../StyledSlatOuter'
 import StyledSlatInner from '../../StyledSlatInner'
 import SectionsData from '../../../lib/data'
@@ -31,7 +31,7 @@ export class Content extends Component {
   }
 }
 
-const MobileMenuStyles = StyledSlatOuter.extend`
+const MobileMenuStyles = styled(StyledSlatOuter)`
   position: absolute;
   margin: 0px;
   @media (min-width: ${({ theme }) => theme.large.start}) {

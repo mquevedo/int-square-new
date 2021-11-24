@@ -89,17 +89,17 @@ const BrandsSectionStyle = styled.div`
       }
       
       &--us-embassy {
-        background-image: url(images/logo--embassy.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--embassy.png);
         background-position: left;
       }
 
       &--ed-usa {
-        background-image: url(images/logo--education-usa.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--education-usa.png);
         background-position: left center;
       }
 
       &--probesa {
-        background-image: url(images/logo--probesa.png);
+        background-image: url(${process.env.PUBLIC_URL}/images/logo--probesa.png);
         margin: auto;
         @media(min-width: ${({theme}) => theme.medium.start}) {
           margin: 0;

@@ -36,7 +36,7 @@ const Container = styled.div`
       width: 140px;
       height: 120px;
       margin-top: -10px;
-      background-image: ${(props) => `url(/images/${props.bgImage})`};
+      background-image: ${(props) => `url(${process.env.PUBLIC_URL}/images/${props.bgImage})`};
       background-repeat: no-repeat;
       background-size: contain;
     }

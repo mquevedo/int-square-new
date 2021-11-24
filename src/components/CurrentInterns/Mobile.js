@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import StyledSlatOuter from '../StyledSlatOuter'
 import StyledSlatInner from '../StyledSlatInner'
 import { InternLeft } from './InternLeft'
@@ -43,7 +44,7 @@ export class Mobile extends Component {
   }
 }
 
-const MapStyles = StyledSlatOuter.extend`
+const MapStyles = styled(StyledSlatOuter)`
   margin: 50px 0 0 0;
   height: 850px;
   display: block;

@@ -19,6 +19,7 @@ export class TabletMenu extends Component<Props, State> {
                     <a
                       href={`${section.slug}`}
                       target={section.slug.startsWith('#') ? '_self' : '_blank'}
+                      rel="noreferrer"
                     >
                       {section.title}
                     </a>

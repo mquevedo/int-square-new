@@ -17,7 +17,7 @@ export class Menu extends Component {
                   <li key={section.id}>
                     <a
                       href={`${section.slug}`}
-                      target={section.slug.startsWith('#') ? '_self' : '_blank'}
+                      target={section.slug.startsWith('#') ? '_self' : '_blank'} rel="noreferrer"
                     >
                       {section.title}
                     </a>

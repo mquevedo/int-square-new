@@ -20,6 +20,7 @@ export class Content extends Component {
                 href={`${section.slug}`}
                 target={section.slug.startsWith('#') ? '_self' : '_blank'}
                 onClick={handleOnClick}
+                rel="noreferrer"
               >
                 {section.title}
               </a>

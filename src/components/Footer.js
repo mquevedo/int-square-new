@@ -85,7 +85,7 @@ export const Footer = () => {
       <StyledSlatOuter className='footer__disclosure__outer'>
         <StyledSlatInner className='footer__disclosure__inner'>
           <div className='footer__disclosure__text'>
-            &copy; 2021 Korinver. All rights reserved
+            &copy; 2021 Korinver. All rights reserved TEST!!
           </div>
         </StyledSlatInner>
       </StyledSlatOuter>

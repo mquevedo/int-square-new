@@ -200,7 +200,7 @@ const MapStyles = styled(StyledSlatOuter)`
         &__avatar {
           margin: -185px 0 0 20px;
           .bgImage {
-            background-image: url('${process.env.PUBLIC_URL}//images/avatar--josue.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}/images/avatar--josue.png') !important;
           }
         }
         &__horizontal-line {
@@ -234,7 +234,7 @@ const MapStyles = styled(StyledSlatOuter)`
         &__avatar {
           margin: -390px 0 0 240px;
           .bgImage {
-            background-image: url('${process.env.PUBLIC_URL}//images/avatar--victor.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}/images/avatar--victor.png') !important;
           }
         }
         &__horizontal-line {
@@ -265,7 +265,7 @@ const MapStyles = styled(StyledSlatOuter)`
         &__avatar {
           margin: -130px 0 0 525px;
           .bgImage {
-            background-image: url('${process.env.PUBLIC_URL}//images/avatar--jose.png') !important;
+            background-image: url('${process.env.PUBLIC_URL}/images/avatar--jose.png') !important;
           }
         }
         &__vertical-line {

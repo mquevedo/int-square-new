@@ -8,7 +8,7 @@ export const CONTACT_URLS = {
 }
 
 export const EXTERNAL_LINKS = {
-  GEN_UI: 'https://genui.co/',
+  GEN_UI: 'https://genui.com/',
   IBES: 'https://www.ibes.ag/nc/en.html',
   KORINVER: 'http://www.korinver.com',
   US_EMBASSY: 'https://sv.usembassy.gov/es/',
